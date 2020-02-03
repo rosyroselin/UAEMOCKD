@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Intranet - Attendance Timing List</title>
+
+<!-- Bootstrap -->
+<link href="../css/bootstrap.css" rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="../css/datepicker.css" rel="stylesheet">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link href="../css/main-ar.css" rel="stylesheet">
+</head>
+
+
+<body>
+<div class="thetop"></div>
+<!-- HEADER START -->
+<nav class="navbar">
+  <div class="container">
+	<div class="navbar-header">
+	  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topmenu" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+	</div>
+	<!-- Brand and toggle get grouped for better mobile display -->
+	<div class="navbar-header">
+	  <!-- Collect the nav links, forms, and other content for toggling -->
+	  <div class="collapse navbar-collapse topmenu" id="topmenu">
+		<ul class="nav navbar-nav">
+		  <li><a href="#ministry">وزارة<span class="sr-only">(current)</span></a></li>
+		  <li class="dropdown"><a href="#departments" class="dropdown-toggle" data-toggle="dropdown">الإدارات <span class="caret"></span></a>
+			<ul class="dropdown-menu topmenu-dropdown">
+				<li><a href="#">الإدارات 1</a></li>
+				<li><a href="#">الإدارات 2</a></li>
+				<li><a href="#">الإدارات 3</a></li>
+				<li><a href="#">الإدارات 4</a></li>
+			</ul>
+		</li>
+		<li class="dropdown"><a href="#eservices" class="dropdown-toggle" data-toggle="dropdown">الخدمات الإلكترونية <span class="caret"></span></a>
+			<ul class="dropdown-menu topmenu-dropdown">
+				<li><a href="#">طلب النقل</a></li>
+				<li><a href="#">تقرير مشكلة الموظفين</a></li>
+				<li><a href="#">طلب الإجازة</a></li>
+				<li><a href="#">طلب رسالة نوك</a></li>
+				<li><a href="#">حجز فندق / قاعة</a></li>
+			</ul>
+		</li>
+		<li><a href="#knowledgecenter">مركز المعرفة</a></li>
+		</ul>
+	  </div>
+	</div>
+	<!-- /.navbar-collapse -->
+  </div>
+<!-- /.container-fluid --> 
+</nav>
+<!--Page Header-->
+<div class="page-header">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-md-3 col-lg-4">
+			<button type="button" class="hidden-md hidden-lg btn btn-default sidebar-btn pull-right" data-toggle="sidebar" data-target=".sidebar-right">بار جانبي</button>
+			<a href="dashboard.html"><img src="../images/logo_mckd_menubar_arabic.svg" alt="United Arab Emirates Ministry of Culture & Knowledge Center" title="United Arab Emirates Ministry of Culture & Knowledge Center" class="img-responsive logo pull-left" /></a>
+			</div>
+			<div class="col-sm-12 col-md-9 col-lg-8 hidden-xs hidden-sm">
+				<div class="container-fluid">
+				<ul class="nav navbar-nav navbar-right text-center top-right-nav" id="right-menu">
+					<li>
+					<div class="holdingbox">
+						<span class="allsmile">
+							<label><input type="radio" name="colorRadio" value="normal-smile" class="smile-mood"></label>
+							<label><input type="radio" name="colorRadio" value="sad-smile" class="smile-mood"><img src="../images/ico_menubar_smile_sad.svg" width="20" height="20" /></label>
+							<label><input type="radio" name="colorRadio" value="regular-smile" class="smile-mood"><img src="../images/ico_menubar_smile_regular.svg" width="20" height="20" /></label>
+							<label><input type="radio" name="colorRadio" value="happy-smile" class="smile-mood"><img src="../images/ico_menubar_smile_happy.svg" width="20" height="20" /></label>
+						</span>
+						<span class="activesmile">
+							<span class="normal-smile smile-box" style="display:inline-block;"></span>
+							<span class="sad-smile smile-box"></span>
+							<span class="regular-smile smile-box"></span>
+							<span class="happy-smile smile-box"></span>
+						</span>
+					</div>
+				</li>
+				<li><a href="mytasks-list.html"><img src="../images/ico_menubar_task_normal.svg" alt="Task" class="svg" /></a></li>
+				<li><a href="intranet-request-list.html"><img src="../images/ico_menubar_request_normal.svg" alt="Request" class="svg" /></a></li>
+				<li class="dropdown notification-dropdown"><a href="#notify" class="dropdown-toggle" data-toggle="dropdown"><img src="../images/ico_menubar_notify_normal.svg" alt="Notify" class="svg" /><sup class="alert-msg">99</sup></a>
+					<ul class="dropdown-menu">
+						<li>
+						<div class="bg-gold notification-top-row">
+							<div class="row">
+								<div class="col-xs-12 col-sm-6"><a href="#">اشر عليها بانها قرات</a></div>
+								<div class="col-xs-12 col-sm-6 text-right"><a href="notification.html"><strong>الاطلاع على جميع الإشعارات</strong></a></div>
+							</div>
+						</div>
+						</li>
+						<li>
+						<div class="row">
+							<div class="col-xs-12 col-sm-3 text-center"> <a href="#"> <img src="../images/n-transport.png" alt=""> </a> </div>
+							<div class="col-xs-12 col-sm-9">
+								<div class="box-title">طلب خدمة النقل</div>
+								<p>الجزر أبجد هوز، وتحسين المنافسة الجامعية، ولكن</p>
+								<div class="date gold"><strong>13:23</strong> اليوم</div>
+							</div>
+						</div>
+						</li>
+						<hr />
+						
+						<li>
+						<div class="row">
+							<div class="col-xs-12 col-sm-3 text-center"> <a href="#"> <img src="../images/n-news.png" alt=""> </a> </div>
+							<div class="col-xs-12 col-sm-9">
+								<div class="box-title">News</div>
+								<p>الجزر أبجد هوز، وتحسين المنافسة الجامعية، ولكن</p>
+								<div class="date gold"><strong>12:15</strong> اليوم</div>
+							</div>
+						</div>
+						</li>
+						<hr />
+						
+						<li>
+						<div class="row">
+							<div class="col-xs-12 col-sm-3 text-center"> <a href="#"> <img src="../images/n-itsupport.png" alt=""> </a> </div>
+							<div class="col-xs-12 col-sm-9">
+								<div class="box-title">طلب دعم تكنولوجيا المعلومات</div>
+								<p>الجزر أبجد هوز، وتحسين المنافسة الجامعية، ولكن</p>
+								<div class="date gold"><strong>11:45</strong> اليوم</div>
+							</div>
+						</div>
+						</li>
+						<hr />
+						
+						<li>
+						<div class="row">
+							<div class="col-xs-12 col-sm-3 text-center"> <a href="#"> <img src="../images/n-itsupport.png" alt=""> </a> </div>
+							<div class="col-xs-12 col-sm-9">
+								<div class="box-title">طلب دعم تكنولوجيا المعلومات</div>
+								<p>الجزر أبجد هوز، وتحسين المنافسة الجامعية، ولكن</p>
+								<div class="date gold"><strong>11:23</strong> اليوم</div>
+							</div>
+						</div>
+						</li>
+						<hr />
+					</ul>
+				</li>
+			<li><a href="dashboard.html"><img src="../images/ico_menubar_home_normal.svg" alt="Home" class="svg" /></a></li>
+			<li class="user-name text-right"> أحمد أل برقاوي <span class="user-designation"> IT مدير</span></li>
+			<li class="user-online dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="../images/user.png" alt="Ahmad al barqawi" /><span> </span> <b class="caret"></b></a>
+				<ul class="dropdown-menu">
+					<li><a href="#">Normal User</a></li>
+					<li><a href="#">Coordinator</a></li>
+					<li><a href="#">Service Manager</a></li>
+	
+					<hr/>
+	
+					<li><a href="#">Edit Profile</a></li>
+					<li><a href="#">Account Setting</a></li>
+					<li><a href="../login.html">Logout</a></li>
+				</ul>
+			</li>
+			<li><a href="../en/dashboard.html">ENG</a></li>
+		  </ul>
+		</div>
+	  </div>
+	</div>
+  </div>
+</div>
+<!-- HEADER END -->
+
+<!-- CENTER CONTENT START-->
+<div class="container">
+
+	<div class="row">
+	<!-- LEFT CONTENT START -->
+    <div class="col-sm-12 col-md-8 col-lg-8">
+		<!--Attendance List Start-->
+		<h2><a href="dashboard.html">لوحة القيادة</a> \ <b><a href="attendance-list.html">الحضور</a></b><div class="pull-left graph-view"><img src="../images/graph-hide.png" /></div></h2>
+        <div class="graph-panel font-1">
+        <div class="row">
+        	<div class="col-xs-12 col-md-4">
+            	<a href="attendance-leave-list.html">
+            	<div class="box-container img-rounded text-center">
+                    <h5>اوراق اشجار</h5>
+                    متبق
+                    <div id="AttendanceLeaves" class="googlechart"></div>
+                    <div class="overlay overlay-equal">12</div>
+                </div>
+                </a>
+            </div>
+            
+            <div class="col-xs-12 col-md-4">
+            	<a href="attendance-timing-list.html">
+                <div class="box-container img-rounded text-center active-box-container">
+                    <h5>توقيت</h5>
+                    معدل
+                    <div id="AttendanceTimings" class="googlechart"></div>
+                    <div class="overlay timings"><span>عادة في الوقت المحدد</span></div>
+                </div>
+                </a>
+            </div>
+            
+            <div class="col-xs-12 col-md-4">
+            	<a href="attendance-list.html">
+                <div class="box-container img-rounded text-center">
+                    <h5>الحضور</h5>
+                    النسبة المئوية
+                    <div id="Attendance" class="googlechart"></div>
+                    <div class="overlay">75</div>
+                </div>
+                </a>
+            </div>
+        </div>
+        
+		<div class="row">
+			<div class="col-xs-12 col-md-12">
+            	<div class="box-container">
+				<h3>ملخص المواعيد</h3>
+                <div class="row task-summary gutter-small">
+                    <div class="col-xs-6 col-sm-2">
+                        <p class="black"><b>كل الوقت</b></p>
+                        <p>إجمالي أيام العمل</p>
+                        <p>التحقق من المتوسط</p>
+                        <p>تشيكوت أفغ</p>
+                    </div>
+                    <div class="col-xs-6 col-sm-1 gold text-right">
+	                    <p>2y 3m</p>
+                        <p>526</p>
+                        <p>09:30</p>
+                        <p>04:30</p>
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-7">
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-4">
+                                <p class="black"><b>عام</b></p>
+                                <p>إجمالي أيام العمل</p>
+                                <p>التحقق من المتوسط</p>
+                                <p>تشيكوت أفغ</p>
+                            </div>
+                        
+                            <div class="col-xs-6 col-sm-2 gold text-right">
+                                <p><span class="bullet">&#9664;</span>2017<span class="bullet">&#9658;</span></p>
+                                <p>126</p>
+                                <p>09:42</p>
+                                <p>04:27</p>
+                            </div>
+                        
+                            <div class="col-xs-6 col-sm-4">
+                                <p class="black"><b>شهر</b></p>
+                                <p>إجمالي أيام العمل</p>
+                                <p>التحقق من المتوسط</p>
+                                <p>تشيكوت أفغ</p>
+                            </div>
+                        
+                            <div class="col-xs-6 col-sm-2 gold text-right">
+                                <p><span class="bullet">&#9664;</span>نوفمبر<span class="bullet">&#9658;</span></p>
+                                <p>22</p>
+                                <p>09:27</p>
+                                <p>04:16</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-2">
+                        <p class="black text-center"><b>هذا الاسبوع</b></p>
+                        <div class="row">
+                            <div class="col-xs-6 small small-par">
+                                <p>S</p>
+                                <p>M</p>
+                                <p>T</p>
+                                <p>W</p>
+                                <p>T</p>
+                            </div>
+                            <div class="col-xs-6 small gold text-right small-par">
+                                <p>4:12</p>
+                                <p>8:34</p>
+                                <p>4:13</p>
+                                <p>5:16</p>
+                                <p>4:27</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+			</div>
+		</div><!--/row-->
+        </div>
+        
+        <div class="row">
+            <div class="col-xs-12 col-sm-9">
+                <div class="box-container">
+                <div class="attendance-date visible-xs" data-date-end-date="0d"></div>
+                <h3>توقيت التاريخ</h3>
+                <div class="box-container box-container-box box-container-edit">
+                    <div class="dropedit">
+                    <ul class="nav dropdown">
+                        <li><a href="#"><img src="../images/edit-box.png"></a>
+                            <ul class="dropdown-menu sub-menu">
+                                <li><a href="attendance-timing-list-edit.html">تحرير طلب</a></li>
+                                <li><a href="#">إلغاء الطلب</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </div>
+                    <div class="media">
+                        <div class="media-right"> <a href="#"> <img class="media-object" src="../images/ico_quicklaunch_attendance_normal.svg" alt=""> </a> </div>
+                        <div class="media-body">
+                            <div class="row">
+                                <div class="col-md-3 text-center"></div>
+                                <div class="col-md-9">
+                                	<div class="row">
+                                        <div class="col-md-12">
+                                            <div><span class="date">أبريل 14 2017</span> اليوم</div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-6 col-md-3">تحقق في</div>
+                                        <div class="col-xs-6 col-md-3 color-green">09:21</div>
+                                        <div class="col-xs-6 col-md-3">الدفع</div>
+                                        <div class="col-xs-6 col-md-3 color-red">-</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-container box-container-box">
+                    <div class="media">
+                        <div class="media-right"> <a href="#"> <img class="media-object" src="../images/ico_quicklaunch_attendance_normal.svg" alt=""> </a> </div>
+                        <div class="media-body">
+                            <div class="row">
+                                <div class="col-md-3 status-denied">تم رفض الطلب</div>
+                                <div class="col-md-9">
+                                	<div class="row">
+                                        <div class="col-md-12">
+                                            <div class="date">أبريل 13 2017</div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-6 col-md-3">تحقق في</div>
+                                        <div class="col-xs-6 col-md-3 color-red">11:13</div>
+                                        <div class="col-xs-6 col-md-3">الدفع</div>
+                                        <div class="col-xs-6 col-md-3 color-green">04:12</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="car-status red"><i>بدون تعليقات</i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="box-container box-container-box">
+                    <div class="media">
+                        <div class="media-right"> <a href="#"> <img class="media-object" src="../images/ico_quicklaunch_attendance_normal.svg" alt=""> </a> </div>
+                        <div class="media-body">
+                            <div class="row">
+                                <div class="col-md-3 status-default">طلب الإنهاء</div>
+                                <div class="col-md-9">
+                                	<div class="row">
+                                        <div class="col-md-12">
+                                            <div class="date">أبريل 12 2017</div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-6 col-md-3">تحقق في</div>
+                                        <div class="col-xs-6 col-md-3 color-green">09:02</div>
+                                        <div class="col-xs-6 col-md-3">الدفع</div>
+                                        <div class="col-xs-6 col-md-3 color-red">02:41</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="box-container box-container-box box-container-edit">
+                    <div class="dropedit">
+                    <ul class="nav dropdown">
+                        <li><a href="#"><img src="../images/edit-box.png"></a>
+                            <ul class="dropdown-menu sub-menu">
+                                <li><a href="attendance-timing-list-edit.html">تحرير طلب</a></li>
+                                <li><a href="#">إلغاء الطلب</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </div>
+                    <div class="media">
+                        <div class="media-right"> <a href="#"> <img class="media-object" src="../images/ico_quicklaunch_attendance_normal.svg" alt=""> </a> </div>
+                        <div class="media-body">
+                            <div class="row">
+                                <div class="col-md-3 text-center"></div>
+                                <div class="col-md-9">
+                                	<div class="row">
+                                        <div class="col-md-12">
+                                            <div class="date">أبريل 11 2017</div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 color-red">غائب</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="box-container box-container-box box-container-edit">
+                    <div class="dropedit">
+                    <ul class="nav dropdown">
+                        <li><a href="#"><img src="../images/edit-box.png"></a>
+                            <ul class="dropdown-menu sub-menu">
+                                <li><a href="attendance-timing-list-edit.html">تحرير طلب</a></li>
+                                <li><a href="#">إلغاء الطلب</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </div>
+                    <div class="media">
+                        <div class="media-right"> <a href="#"> <img class="media-object" src="../images/ico_quicklaunch_attendance_normal.svg" alt=""> </a> </div>
+                        <div class="media-body">
+                            <div class="row">
+                                <div class="col-md-3 text-center"></div>
+                                <div class="col-md-9">
+                                	<div class="row">
+                                        <div class="col-md-12">
+                                            <div class="date">أبريل 10 2017</div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-6 col-md-3">تحقق في</div>
+                                        <div class="col-xs-6 col-md-3 color-red">11:13</div>
+                                        <div class="col-xs-6 col-md-3">الدفع</div>
+                                        <div class="col-xs-6 col-md-3 color-green">04:12</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            
+            <div class="col-sm-3 hidden-xs text-center calendar-block">
+                <div class="attendance-date" data-date-end-date="0d"></div>
+            </div>
+        </div><!--/row-->
+	</div>
+	<!-- LEFT CONTENT END -->
+    
+    	<!-- RIGHT CONTENT START -->
+		<div class="col-xs-10 col-sm-10 col-md-4 col-lg-4 sidebar sidebar-right sidebar-animate sidebar-md-show">
+			<!--Sidebar Menu BT-->
+			<div class="hidden-md hidden-lg">
+				<h2>قائمة الشريط الجانبي</h2>
+				<div class="row">
+				<div class="col-xs-6 col-sm-6">
+					<button type="button" class="hidden-md hidden-lg btn btn-default" data-toggle="sidebar" data-target=".sidebar-right">أغلق الشريط الجانبي</button>
+				</div>
+				<div class="col-xs-6 col-sm-6">
+					<div class="user-online dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="../images/user.png" alt="Ahmad al barqawi" /><span> </span> <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">مستخدم عادي</a></li>
+						<li><a href="#">منسق</a></li>
+						<li><a href="#">مدير الخدمة</a></li>
+						<hr/>
+						<li><a href="#">تعديل الملف الشخصي</a></li>
+						<li><a href="#">إعدادات الحساب</a></li>
+						<li><a href="../login.html">الخروج</a></li>
+					</ul>
+					أحمد أل برقاوي
+					<!--<span class="user-designation">IT Manager</span>-->
+					</div>
+				</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-6 col-sm-4">
+						<div class="text-center box">
+						<a href="dashboard.html"><img src="../images/ico_menubar_home_normal.svg" alt="Home" class="svg" /></a>
+						<p>الصفحة الرئيسية</p>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-4">
+						<div class="text-center box">
+						<a href="notification.html"><img src="../images/ico_menubar_notify_normal.svg" alt="Notify" class="svg" /><sup class="alert-msg">99</sup></a>
+						<p>إعلام</p>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-4">
+						<div class="text-center box">
+						<a href="intranet-request-list.html"><img src="../images/ico_menubar_request_normal.svg" alt="Request" class="svg" /></a>
+						<p>طلباتي</p>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-4">
+						<div class="text-center box">
+						<a href="../ar/dashboard.html" class="font-1">عربي</a>
+						<p>لغة</p>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-4">
+						<div class="text-center box">
+						<a href="mytasks-list.html"><img src="../images/ico_menubar_task_normal.svg" alt="Task" class="svg" /></a>
+						<p>مهامي</p>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-4">
+						<div class="text-center box">
+						<div class="holdingbox holdingbox-sidepane">
+							<span class="allsmile">
+								<label><input type="radio" name="colorRadio" value="normal-smile" class="smile-mood"></label>
+								<label><input type="radio" name="colorRadio" value="sad-smile" class="smile-mood"><img src="../images/ico_menubar_smile_sad.svg" width="20" height="20" /></label>
+								<label><input type="radio" name="colorRadio" value="regular-smile" class="smile-mood"><img src="../images/ico_menubar_smile_regular.svg" width="20" height="20" /></label>
+								<label><input type="radio" name="colorRadio" value="happy-smile" class="smile-mood"><img src="../images/ico_menubar_smile_happy.svg" width="20" height="20" /></label>
+							</span>
+							<span class="activesmile">
+								<span class="normal-smile smile-box" style="display:inline-block;"></span>
+								<span class="sad-smile smile-box"></span>
+								<span class="regular-smile smile-box"></span>
+								<span class="happy-smile smile-box"></span>
+							</span>
+						</div>
+						<p>مزاجي</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--Sidebar Menu BT-->
+			
+			<h2>التشغيل السريع</h2>
+			<div class="quicklaunch">
+				<div class="row no-gutter">
+					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+						<a href="attendance-list.html"><div class="text-center box ql-box-active"><img src="../images/ico_quicklaunch_attendance_normal.svg" class="img-responsive" alt="Attendence" /> <p>الحضور</p></div></a>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-6 col-lg-4">
+						<a href="events-calendar.html"><div class="text-center box"><img src="../images/ico_quicklaunch_calendar_normal.svg" class="img-responsive" alt="Calendar" /> <p>التقويم</p></div></a>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-6 col-lg-4">
+						<a href="#"><div class="text-center box"><img src="../images/ico_quicklaunch_directory_normal.svg" class="img-responsive" alt="Directory" /> <p>دليل</p></div></a>
+					</div>
+					
+					<div class="col-xs-6 col-sm-4 col-md-6 col-lg-4">
+						<a href="#"><div class="text-center box"><img src="../images/ico_quicklaunch_meeting_normal.svg" class="img-responsive" alt="Meeting Room" /> <p>قاعة الاجتماعات</p></div></a>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-6 col-lg-4">
+						<a href="#"><div class="text-center box"><img src="../images/ico_quicklaunch_itsupport_normal.svg" class="img-responsive" alt="IT Support" /> <p>الدعم IT</p></div></a>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-6 col-lg-4">
+						<a href="request-transport-service-manager.html"><div class="text-center box"><img src="../images/ico_quicklaunch_transport_normal.svg" class="img-responsive" alt="Transport" /> <p>المواصلات</p></div></a>
+					</div>
+					
+					<div class="col-xs-6 col-sm-4 col-md-6 col-lg-4">
+						<a href="#"><div class="text-center box"><img src="../images/ico_quicklaunch_coffee_normal.svg" class="img-responsive" alt="Coffee" /> <p>قهوة</p></div></a>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-6 col-lg-4">
+						<a href="#"><div class="text-center box"><img src="../images/ico_quicklaunch_social_normal.svg" class="img-responsive" alt="Social" /> <p>اجتماعي</p></div></a>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-6 col-lg-4">
+						<a href="#"><div class="text-center box"><img src="../images/ico_quicklaunch_documents_normal.svg" class="img-responsive" alt="Documents" /> <p>مستندات</p></div></a>
+					</div>
+				</div>
+			</div>
+			<div class="mystatus">
+				<h2>وضعي</h2>
+				<div class="box-container font-1">
+					<h3>مهام</h3>
+					<div class="row">
+						<div class="col-sm-6"><span class="green">04</span> منجز </div>
+						<div class="col-sm-6"><span class="red">08</span> قيد الانتظار </div>
+					</div>
+				</div>
+			</div>
+			<div class="box-container font-1">
+				<h3>الحضور</h3>
+				<div class="text-left"><span class="sidebar-date">اليوم</span> تحقق في <span class="green">08:14</span></div>
+				<p class="sidebar-date">في الامس</p>
+				<hr>
+				<div class="row">
+					<div class="col-sm-6 text-right"><span class="green">04:29</span> الدفع </div>
+					<div class="col-sm-6"><span class="red">10:29</span> تحقق في </div>
+				</div>
+			</div>
+			
+            <h2>دليل الموظفين</h2>
+            <div class="box-container">
+                <div class="employee-directory">
+                    <div class="q-search">
+                        <h3>نتائج البحث السريع <a href="#" class="gold pull-left"><u>انتقل إلى الدليل</u></a></h3>
+                        <div class="row q-search-result">
+                        	<div class="col-sm-8">
+                                <h1>محمد صالح حبيب</h1>
+                                <div class="gray-color q-designation">مدير النقل</div>
+                                <div class="gray-color q-designation">إدارة الاتصالات</div>
+                                <hr>
+                                <p><img src="../images/phone-icon.svg" alt="Extention No." /> تمديد: 983</p>
+                                <p><img src="../images/email-icon.svg" alt="Email" /> <a href="mailto:msaleh@mckd.ae" class="gold">msaleh@mckd.ae</a></p>
+                                <p><img src="../images/tablet-icon.svg" alt="Tablet" /> 05225134899</p>
+                            </div>
+                            <div class="col-sm-4"><a href="#" class="double-circle"><img src="../images/contact-1.png" alt="" class="img-responsive"></a></div>
+                            <div class="col-sm-8"><a href="#" class="gold v-profile">اعرض الملف كاملا</a></div>
+                            <div class="col-sm-4"><a class="btn btn-default back" role="button"><img src="../images/corner-left-round.svg" align="absmiddle" /> الى الخلف</a></div>
+                        </div>
+                    </div>
+                    <div class="e-list">
+                        <h3>قائمة موظف <a href="#" class="gold pull-left"><u>انتقل إلى الدليل</u></a></h3>
+                        <div id="searchable-container" class="searchable">
+                            <div class="row">
+                                <div class="col-xs-12 e-row">
+                                <div class="e-head">أحمد الجوس</div>
+                                <p class="gray-color">المراقب المالي <span class="pull-left gray-color">تمديد:6511</span></p>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-xs-11 e-row">
+                                <div class="e-head">أحمد غني</div>
+                                <p class="gray-color">المبيعات التنفيذي <span class="pull-left gray-color">تمديد:1241</span></p>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-xs-11 e-row">
+                                <div class="e-head">أحمد حبيب الله</div>
+                                <p class="gray-color">مصمم <span class="pull-left gray-color">تمديد:-</span></p>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-xs-11 e-row">
+                                <div class="e-head">أحمد بن حنبلي</div>
+                                <p class="gray-color">مطور .NET <span class="pull-left gray-color">تمديد:1432</span></p>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-xs-11 e-row">
+                                <div class="e-head">أسعد الله</div>
+                                <p class="gray-color">محاسب <span class="pull-left gray-color">تمديد:2343</span></p>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-xs-11 e-row">
+                                <div class="e-head">بان يامين</div>
+                                <p class="gray-color">محاسب <span class="pull-left gray-color">تمديد:2151</span></p>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-xs-11 e-row">
+                                <div class="e-head">محمد أحمد السباق</div>
+                                <p class="gray-color">مدير تكنولوجيا المعلومات <span class="pull-left gray-color">تمديد:7512</span></p>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-xs-11 e-row">
+                                <div class="e-head">محمد أبو غالي</div>
+                                <p class="gray-color">مدير المبيعات <span class="pull-left gray-color">تمديد:-</span></p>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-xs-11 e-row">
+                                <div class="e-head">محمد إسلام مجدي</div>
+                                <p class="gray-color">حصة نقطة ديف <span class="pull-left gray-color">تمديد:1234</span></p>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-xs-11 e-row">
+                                <div class="e-head">محمد بن خالد</div>
+                                <p class="gray-color">شخص التمويل <span class="pull-left gray-color">تمديد:2234</span></p>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-xs-11 e-row">
+                                <div class="e-head">محمد عيسى</div>
+                                <p class="gray-color">الواجهة الأمامية ديف <span class="pull-left gray-color">تمديد:5432</span></p>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-xs-11 e-row">
+                                <div class="e-head">محمد أحمد </div>
+                                <p class="gray-color">محاسب <span class="pull-left gray-color">تمديد:2345</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row search-box">
+                            <div class="search-container">
+                                <input type="button" value="بحث" class="btn btn-theme search-btn"><input type="search" id="container-search" value="" class="form-control search-input text-search" placeholder="البحث حسب الاسم، التسمية، الرقم الفرعي">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+			<div class="box-container">
+				<h3>آخر نشاط</h3>
+				<p><span class="font-1">محمد أحمد</span>  الموسومة لك في وظيفة</p>
+				<p class="sidebar-date">اليوم  10:30</p>
+				<hr>
+				
+				<p><span class="font-1">محمد سابق</span>  تعيين مهمة لك</p>
+				<p class="sidebar-date">اليوم 12:11</p>
+				<hr>
+				
+				<p><span class="font-1">اسمين علي </span>  أرسل لك رسالة</p>
+				<p class="sidebar-date">اليوم 13:45</p>
+			</div>
+			</div>
+		<!--/.sidebar-offcanvas-->
+		<!-- RIGHT CONTENT END -->
+		</div>
+		<!--/row-->
+		<div class="row">
+		<!--Internal E Services Starts-->
+		<div class="eServices container-fluid">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12">
+				<div class="bottom-pullup">
+					<h2>الخدمات الإلكترونية الداخلية <span class="showall pull-left"><a href="eservices.html">عرض الكل</a></span></h2>
+					<div class="text-center"><span class="glyphicon glyphicon-chevron-up arrow" aria-hidden="true"></span></div>
+						<div class="row text-center">
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/1-request-transport.png" alt="" /><p>طلب النقل</p></a></div>
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/2-employee-issue-report.png" alt="" /><p>تقرير مشكلة الموظفين</p></a></div>
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/3-leave-request.png" alt="" /><p>ترك طلب</p></a></div>
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/4-request-noc-letter.png" alt="" /><p>طلب خطاب نوك</p></a></div>
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/5-hotel-hall-reservation.png" alt="" /><p>حجز فندق / قاعة</p></a></div>
+							<div class="showcontent slidecontainer">
+								<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/6-request-it-support.png" alt="" /><p>طلب دعم تكنولوجيا المعلومات</p></a></div>
+								<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/7-training-university-student.png" alt="" /><p>تدريب طلاب الجامعة</p></a></div>
+								<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/8-request-training.png" alt="" /><p>طلب التدريب</p></a></div>
+								<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/9-nursery-registration.png" alt="" /><p>تسجيل الحضانة</p></a></div>
+								<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/10-procurement-service.png" alt="" /><p>خدمات الشراء</p></a></div>
+								<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/11-drinking-water-supply.png" alt="" /><p>الشرب إمدادات المياه</p></a></div>
+								<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/12-guest-booking-request.png" alt="" /><p>طلب حجز النزلاء</p></a></div>
+								<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/13-logistic-request.png" alt="" /><p>طلب اللوجستية</p></a></div>
+								<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/14-it-system-request.png" alt="" /><p>طلب أنظمة تكنولوجيا المعلومات</p></a></div>
+								<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/15-employee-suggestions.png" alt="" /><p>اقتراحات الموظفين</p></a></div>
+								<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/16-meeting-room-booking.png" alt="" /><p>حجز غرفة الاجتماعات</p></a></div>
+								<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/17-request-for-newspaper.png" alt="" /><p>طلب صحيفة</p></a></div>
+								<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/18-stationary-request.png" alt="" /><p>طلب ثابت</p></a></div>
+								<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/19-assets-transfer-service.png" alt="" /><p>خدمة نقل الأصول</p></a></div>
+								<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/20-request-return-custody.png" alt="" /><p>طلب حجز العودة</p></a></div>
+								<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/21-property-transfer.png" alt="" /><p>نقل الملكية</p></a></div>
+								<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/22-request-official-leave.png" alt="" /><p>طلب إجازة سفر رسمية</p></a></div>
+								<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/23-event-media-coverage.png" alt="" /><p>طلب تغطية وسائل الإعلام الحدث</p></a></div>
+								<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/24-request-social-media-content.png" alt="" /><p>طلب محتوى وسائل الاعلام الاجتماعية</p></a></div>
+								<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/25-sms-sending-service.png" alt="" /><p>سمز إرسال الخدمة</p></a></div>
+								<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/26-request-website-content.png" alt="" /><p>طلب محتوى موقع الويب</p></a></div>
+								<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/27-geophysical-design-service.png" alt="" /><p>خدمة التصميم الجيوفيزيائي</p></a></div>
+								<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/28-identity-matching-service.png" alt="" /><p>خدمة مطابقة الهوية</p></a></div>
+								<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/29-organize-ministry-international-post.png" alt="" /><p>تنظيم وزارة المشاركات الدولية</p></a></div>
+								<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/30-document-control-service.png" alt="" /><p>خدمة مراقبة الوثائق</p></a></div>
+								<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/31-request-poll.png" alt="" /><p>طلب استطلاع</p></a></div>
+								<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/32-administrative-decision.png" alt="" /><p>الأقسام الإدارية</p></a></div>
+								<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/33-service-drafting.png" alt="" /><p>صياغة الخدمة</p></a></div>
+								<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/34-agent-appointment.png" alt="" /><p>تعيين وكيل</p></a></div>
+							</div>
+						</div>
+						</div>
+					</div>
+				</div>
+		</div>
+	</div>
+        <!--Internal E Services Ends-->
+	</div>
+</div>
+<!-- CENTER CONTENT END-->
+
+<!-- FOOTER START -->  
+<footer>
+	<div class="container">
+	  <div class="row">
+		<div class="col-sm-12 col-md-4 copyright">
+		  <p>2017 Ministry of Culture and knowledge development</p>
+		</div>
+		<div class="col-sm-12 col-md-8">
+		  <form class="navbar-form text-right" role="search">
+			<div class="input-group add-on">
+			  <input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text">
+			  <div class="input-group-btn">
+				<button class="btn btn-default btn-search" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+			  </div>
+			</div>
+			Intranet Portal
+		  </form>
+		  <div class="scrolltop">
+				<div class="scroll icon"><i class="fa fa-4x fa-angle-up"></i></div>
+			</div>
+		</div>
+	  </div>
+	</div>
+</footer>
+<!-- FOOTER END -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="../js/jquery-1.11.3.min.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script src="../js/bootstrap-datepicker.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="../js/sidebar.js"></script>
+<script src="../js/searchable.js"></script>
+<script src="../js/main.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+  google.charts.load('current', {'packages':['corechart']});
+  google.charts.setOnLoadCallback(Attendance);
+  google.charts.setOnLoadCallback(AttendanceTimings);
+  google.charts.setOnLoadCallback(AttendanceLeaves);
+</script>
+</body>
+</html>

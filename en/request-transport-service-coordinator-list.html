@@ -1,0 +1,1320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Intranet - Request Transport History</title>
+
+<!-- Bootstrap -->
+<link href="../css/bootstrap.css" rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+<link href="../css/main.css" rel="stylesheet">
+</head>
+<body>
+<div class="thetop"></div>
+<!-- HEADER START -->
+<nav class="navbar">
+	<div class="container">
+		<div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topmenu" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+		</div>
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse topmenu" id="topmenu">
+				<ul class="nav navbar-nav">
+					<li><a href="#ministry">Ministry<span class="sr-only">(current)</span></a></li>
+					<li class="dropdown"><a href="#departments" class="dropdown-toggle" data-toggle="dropdown">Departments <span class="caret"></span></a>
+                        <ul class="dropdown-menu topmenu-dropdown">
+                            <li><a href="#">Department 1</a></li>
+                            <li><a href="#">Department 2</a></li>
+                            <li><a href="#">Department 3</a></li>
+                            <li><a href="#">Department 4</a></li>
+                        </ul>
+                    </li>
+					<li class="dropdown"><a href="#eservices" class="dropdown-toggle" data-toggle="dropdown">E Services <span class="caret"></span></a>
+                        <ul class="dropdown-menu topmenu-dropdown">
+                            <li><a href="#">Request Transportation</a></li>
+                            <li><a href="#">Employee Issue Report</a></li>
+                            <li><a href="#">Leave Request</a></li>
+                            <li><a href="#">Request NOC Letter</a></li>
+                            <li><a href="#">Hotel / Hall Reservation</a></li>
+                        </ul>
+                    </li>
+					<li><a href="#knowledgecenter">Knowledge Center</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- /.navbar-collapse --> 
+	</div>
+	<!-- /.container-fluid --> 
+</nav>
+<!--Page Header-->
+<div class="page-header">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-md-3 col-lg-4">
+            <button type="button" class="hidden-md hidden-lg btn btn-default sidebar-btn pull-right" data-toggle="sidebar" data-target=".sidebar-right">Side Bar</button>
+            <a href="dashboard.html"><img src="../images/logo_mckd_menubar_normal.svg" alt="United Arab Emirates Ministry of Culture & Knowledge Center" title="United Arab Emirates Ministry of Culture & Knowledge Center" class="img-responsive logo" /></a>
+            </div>
+			<div class="col-sm-12 col-md-9 col-lg-8 hidden-xs hidden-sm">
+				<div class="container-fluid">
+                	<!-- Menu Bar Start-->
+					<ul class="nav navbar-nav navbar-right text-center top-right-nav" id="right-menu">
+						<li>
+                        <div class="holdingbox">
+                            <span class="allsmile">
+                                <label><input type="radio" name="colorRadio" value="normal-smile" class="smile-mood"></label>
+                                <label><input type="radio" name="colorRadio" value="sad-smile" class="smile-mood"><img src="../images/ico_menubar_smile_sad.svg" width="20" height="20" /></label>
+                                <label><input type="radio" name="colorRadio" value="regular-smile" class="smile-mood"><img src="../images/ico_menubar_smile_regular.svg" width="20" height="20" /></label>
+                                <label><input type="radio" name="colorRadio" value="happy-smile" class="smile-mood"><img src="../images/ico_menubar_smile_happy.svg" width="20" height="20" /></label>
+                            </span>
+                            <span class="activesmile">
+                                <span class="normal-smile smile-box" style="display:inline-block;"></span>
+                                <span class="sad-smile smile-box"></span>
+                                <span class="regular-smile smile-box"></span>
+                                <span class="happy-smile smile-box"></span>
+                            </span>
+                        </div>
+						</li>
+						<li><a href="mytasks-list.html"><img src="../images/ico_menubar_task_normal.svg" alt="Task" class="svg" /></a></li>
+						<li><a href="intranet-request-list.html"><img src="../images/ico_menubar_request_normal.svg" alt="Request" class="svg" /></a></li>
+						<li class="dropdown notification-dropdown"><a href="#notify" class="dropdown-toggle" data-toggle="dropdown"><img src="../images/ico_menubar_notify_normal.svg" alt="Notify" class="svg" /><sup class="alert-msg">99</sup></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                <div class="bg-gold notification-top-row">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-6"><a href="#">Mark all as read</a></div>
+                                        <div class="col-xs-12 col-sm-6 text-right"><a href="notification.html"><strong>See all Notification</strong></a></div>
+                                    </div>
+                                </div>
+                                </li>
+                                <li>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-3 text-center"> <a href="#"> <img src="../images/n-transport.png" alt=""> </a> </div>
+                                    <div class="col-xs-12 col-sm-9">
+                                        <div class="box-title">Request Transport Service</div>
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed</p>
+                                        <div class="date gold"><strong>13:23</strong> Today</div>
+                                    </div>
+                                </div>
+                                </li>
+                                <hr />
+                                
+                                <li>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-3 text-center"> <a href="#"> <img src="../images/n-news.png" alt=""> </a> </div>
+                                    <div class="col-xs-12 col-sm-9">
+                                        <div class="box-title">News</div>
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed</p>
+                                        <div class="date gold"><strong>12:15</strong> Today</div>
+                                    </div>
+                                </div>
+                                </li>
+                                <hr />
+                                
+                                <li>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-3 text-center"> <a href="#"> <img src="../images/n-itsupport.png" alt=""> </a> </div>
+                                    <div class="col-xs-12 col-sm-9">
+                                        <div class="box-title">Request IT Support</div>
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed</p>
+                                        <div class="date gold"><strong>11:45</strong> Today</div>
+                                    </div>
+                                </div>
+                                </li>
+                                <hr />
+                                
+                                <li>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-3 text-center"> <a href="#"> <img src="../images/n-itsupport.png" alt=""> </a> </div>
+                                    <div class="col-xs-12 col-sm-9">
+                                        <div class="box-title">Request IT Support</div>
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed</p>
+                                        <div class="date gold"><strong>11:23</strong> Today</div>
+                                    </div>
+                                </div>
+                                </li>
+                                <hr />
+                            </ul>
+                        </li>
+						<li><a href="dashboard.html"><img src="../images/ico_menubar_home_normal.svg" alt="Home" class="svg" /></a></li>
+						<li class="user-name text-right"> Ahmad al barqawi <span class="user-designation">IT Manager</span></li>
+						<li class="user-online dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="../images/user.png" alt="Ahmad al barqawi" /><span> </span> <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+                                <li><a href="#">Normal User</a></li>
+                                <li><a href="#">Coordinator</a></li>
+                                <li><a href="#">Service Manager</a></li>
+                                <hr/>
+                                <li><a href="#">Edit Profile</a></li>
+                                <li><a href="#">Account Setting</a></li>
+                                <li><a href="../login.html">Logout</a></li>
+                            </ul>
+						</li>
+						<li class="font-1"><a href="../ar/dashboard.html">عربي</a></li>
+					</ul>
+                    <!-- Menu Bar End-->
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- HEADER END -->
+
+<!-- CENTER CONTENT START-->
+<div class="container">
+
+	<div class="row">
+	<!-- LEFT CONTENT START -->
+    <div class="col-sm-12 col-md-8 col-lg-8">
+        <!--Request Transport-->
+        <h2><a href="dashboard.html">Dashboard</a> \ <b><a href="request-transport-user-requests-list.html">Request Transport</a></b><div class="pull-right graph-view"><img src="../images/graph-hide.png" /></div></h2>
+        
+        <div class="graph-panel">
+        <div class="row">
+			<div class="col-xs-12 col-md-4">
+                <div class="box-container img-rounded text-center">
+                    <h5>Requests</h5>
+                    Accept vs Reject ratio
+                    <div id="TransportRequests" class="googlechart"></div>
+                    <div class="overlay">75</div>
+                </div>
+            </div>
+            
+            <div class="col-xs-12 col-md-4">
+                <div class="box-container img-rounded text-center box-container-fix">
+                    <h5>Vehicle(s)</h5>
+                    Currently Assigned
+                    <div class="rt-img"><img src="../images/car-gray.png" alt="" /></div>
+                    <div class="gold">None</div>
+                </div>
+            </div>
+            
+            <div class="col-xs-12 col-md-4">
+            	<div class="box-container img-rounded text-center box-container-fix">
+                    <h5>Driver(s)</h5>
+                    Currently Assigned
+                    <div class="rt-img"><img src="../images/user-gray.png" alt="" /></div>
+                    <div class="gold">None</div>
+                </div>
+            </div>
+        </div>
+        
+		<div class="row">
+			<div class="col-xs-12 col-md-12">
+            	<div class="box-container">
+				<h3>Transport Request Summary</h3>
+                <div class="row task-summary">
+                    <div class="col-xs-6 col-sm-2">
+                        <p class="black"><b>All time</b></p>
+                        <p>Total Requests</p>
+                        <p>Accepted</p>
+                        <p>Rejected</p>
+                    </div>
+                    <div class="col-xs-6 col-sm-1 gold text-right">
+	                    <p>2y 3m</p>
+                        <p>1526</p>
+                        <p>980</p>
+                        <p>167</p>
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-7">
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-4">
+                                <p class="black"><b>Year</b></p>
+                                <p>Total Requests</p>
+                                <p>Accepted</p>
+                                <p>Rejected</p>
+                            </div>
+                        
+                            <div class="col-xs-6 col-sm-2 gold text-right">
+                                <p><span class="bullet">&#9664;</span>2017<span class="bullet">&#9658;</span></p>
+                                <p>526</p>
+                                <p>112</p>
+                                <p>48</p>
+                            </div>
+                        
+                            <div class="col-xs-6 col-sm-4">
+                                <p class="black"><b>Month</b></p>
+                                <p>Total Requests</p>
+                                <p>Accepted</p>
+                                <p>Rejected</p>
+                            </div>
+                        
+                            <div class="col-xs-6 col-sm-2 gold text-right">
+                                <p><span class="bullet">&#9664;</span>NOV<span class="bullet">&#9658;</span></p>
+                                <p>22</p>
+                                <p>18</p>
+                                <p>4</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-2">
+                        <p class="black text-center"><b>This Week</b></p>
+                        <div class="row">
+                            <div class="col-xs-6 small small-par">
+                                <p>S</p>
+                                <p>M</p>
+                                <p>T</p>
+                                <p>W</p>
+                                <p>T</p>
+                            </div>
+                            <div class="col-xs-6 small gold text-right small-par">
+                                <p><span class="dot"></span></p>
+                                <p><span class="dot"></span></p>
+                                <p><span class="dot"></span></p>
+                                <p><span class="dot red-dot"></span></p>
+                                <p><span class="dot"></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+			</div>
+		</div><!--/row-->
+        </div>
+        
+        <div class="row">
+        
+            <div class="col-xs-12 col-sm-9">
+                <div class="box-container">
+                <button class="btn btn-theme visible-xs" onclick="window.location.href='request-transport.html'">New Request</button>
+                <h3>Request History</h3>
+                <form class="task-history-form">
+                <div class="container-fluid task-sort">
+                    <div class="row">
+                        <div class="col-xs-3 col-sm-2 gold">SORT BY</div>
+                        <div class="col-xs-6 col-sm-7">
+                            <div class="row gutter-small">
+                                <div class="col-xs-4 col-sm-2 text-right"><label>Year </label></div>
+                                <div class="col-xs-8 col-sm-4">
+                                <select id="Status" name="Status" class="form-control btn-default btn-select-light">
+                                    <option value="2017">2017</option>
+                                    <option value="2016">2016</option>
+                                    <option value="2015">2015</option>
+                                    <option value="2014">2014</option>
+                                    <option value="2013">2013</option>
+                                    <option value="2012">2012</option>
+                                </select>
+                                </div>
+                                <div class="col-xs-4 col-sm-2 text-right"><label>Month </label></div>
+                                <div class="col-xs-8 col-sm-4">
+                                <select id="Created" name="Created" class="form-control btn-default btn-select-light">
+                                    <option value="January">January</option>
+                                    <option value="February">February</option>
+                                    <option value="March">March</option>
+                                    <option value="April">April</option>
+                                    <option value="May">May</option>
+                                    <option value="June">June</option>
+                                    <option value="July">July</option>
+                                    <option value="August">August</option>
+                                    <option value="September">September</option>
+                                    <option value="October">October</option>
+                                    <option value="November">November</option>
+                                    <option value="December">December</option>
+                                </select>
+                                </div>
+                                <!--PANEL TO SHOW/HIDE START-->
+                                <div class="showpanel gutter-small">
+                                    <div class="col-xs-4 col-sm-2 text-right"><label>Status</label></div>
+                                    <div class="col-xs-8 col-sm-4">
+                                    <select id="Source" name="Source" class="form-control btn-default btn-select-light">
+                                        <option value="All">All</option>
+                                        <option value="Pending">Pending</option>
+                                        <option value="Approved">Approved</option>
+                                        <option value="Denied">Denied</option>
+                                        <option value="Cancelled">Cancelled</option>
+                                    </select>
+                                    </div>
+                                    <div class="col-xs-4 col-sm-2 text-right"><label>Traffic</label></div>
+                                    <div class="col-xs-8 col-sm-4">
+                                    <select id="Source" name="Source" class="form-control btn-default btn-select-light">
+                                        <option value="All">All</option>
+                                        <option value="Incoming">Incoming</option>
+                                        <option value="Outgoing">Outgoing</option>
+                                    </select>
+                                    </div>
+                                </div>
+                                <!--PANEL TO SHOW/HIDE END-->
+                            </div>
+                        </div>
+                        <div class="col-xs-3 col-sm-3">
+                            <div class="readmorebtn more gold">More options <img src="../images/down-arrow-gold.png" alt="" /></div>
+                        </div>
+                    </div>
+                </div>
+                </form>
+                <div class="gold-line"></div>
+                <h4>Today</h4>
+                <!--Request Transport Box-->
+                <div class="box-container box-container-box box-container-edit box-toggle">
+                    <div class="dropedit">
+                        <div class="nav dropdown visible-xs">
+                            <div class="hover-block edit"><a href="#">Edit</a></div>
+                            <div class="hover-block cancel"><a href="#">Cancel</a></div>
+                        </div>
+                        <ul class="nav dropdown hidden-xs">
+                            <li><a href="#"><img src="../images/edit-box.png"></a>
+                                <ul class="dropdown-menu sub-menu">
+                                    <li><a href="#">Edit Request</a></li>
+                                    <li><a href="#">Cancel Request</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="media top-toggle">
+                        <div class="media-left"> <a href="#"> <img class="media-object" src="../images/ico_quicklaunch_transport_normal.svg" alt=""> </a> </div>
+                        <div class="media-body">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div>TR123456789</div>
+                                    <div class="date">May 11 2017 - May 14 2017 </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6"><span class="h-title">Duration</span> <b>03</b>Days <b>10</b>Hrs</div>
+                                <div class="col-md-6"><span class="h-title">Timings</span> All day(s)</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div>For official visit</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-toggle">
+                        <div class="accordion">
+                            <div class="accordion-head">
+                                <h4>STATUS</h4><div class="a-arrow down"></div>
+                            </div>
+                            <div class="accordion-body">
+                                <div class="form">
+                                    <fieldset>
+                                    <div class="row">
+                                        <div class="col-sm-4"><b>Coordinator:</b></div>
+                                        <div class="col-sm-8"><i class="color-green">Approved</i><p>Cordinator comment Sample text for body style, Lorem ipsum delor emit sungu</p></div>
+                                        <div class="col-sm-4"><b>Service:</b></div>
+                                        <div class="col-sm-8"><i>Pending</i></div>
+                                        
+                                        <div class="col-sm-4"><b>Manager:</b></div>
+                                        <div class="col-sm-8"><i>Admin comment Sample text for body</i></div>
+                                    </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-head">
+                                <h4>DETAILS</h4><div class="a-arrow down"></div>
+                            </div>
+                            <div class="accordion-body">
+                               <div class="form">
+                                <fieldset>
+                                <b class="gold">Approval Details</b>
+                                <hr>
+                                <h4>Driver Assigned</h4>
+                                <div class="row gutter-small">
+                                    <div class="col-sm-4 pass-title">Name</div>
+                                    <div class="col-sm-4 pass-title">Stationed At</div>
+                                    <div class="col-sm-4 pass-title">Mobile Number</div>
+                                </div>
+                                <div class="line"></div>
+                                <div class="row gutter-small">
+                                    <div class="col-sm-4">Mohammed Ameer</div>
+                                    <div class="col-sm-4">Ajman</div>
+                                    <div class="col-sm-4">052 1234567</div>
+                                </div>
+                                <h4>Vehicle Assigned</h4>
+                                <div class="row gutter-small">
+                                    <div class="col-sm-4 pass-title">Name</div>
+                                    <div class="col-sm-4 pass-title">Stationed At</div>
+                                    <div class="col-sm-4 pass-title">Plate No.</div>
+                                </div>
+                                <div class="line"></div>
+                                <div class="row gutter-small">
+                                    <div class="col-sm-4">Toyota Camry</div>
+                                    <div class="col-sm-4">Ajman</div>
+                                    <div class="col-sm-4">LIT 3969</div>
+                                </div>
+                                <b class="gold">Request Details</b>
+                                <hr>
+                                <h4>Requested by</h4>
+                                <p>Mohammad Ahmed Sabaq</p>
+                                
+                                <h4>Number of Passengers</h4>
+                                <p>2 - 5</p>
+                                
+                                <h4>Driver Required</h4>
+                                <p>Yes</p>
+                                
+                                <h4>Destination Emirate</h4>
+                                <p>Abu Dhabi</p>
+                                
+                                <h4>Passenger Information</h4>
+                                <div class="row gutter-small">
+                                    <div class="col-sm-4 pass-title">Name</div>
+                                    <div class="col-sm-4 pass-title">Designation</div>
+                                    <div class="col-sm-4 pass-title">Mobile Number</div>
+                                </div>
+                                <div class="line"></div>
+                                <div class="row gutter-small">
+                                    <div class="col-sm-4">Mohammad Ahmed Sa..</div>
+                                    <div class="col-sm-4">System Admin</div>
+                                    <div class="col-sm-4">052 1234567</div>
+                                    
+                                    <div class="col-sm-4">Talah bin Yusuf</div>
+                                    <div class="col-sm-4">Network Engine..</div>
+                                    <div class="col-sm-4">052 1234567</div>
+                                </div>
+                                </fieldset>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-head">
+                                <h4>TAKE ACTION</h4><div class="a-arrow down"></div>
+                            </div>
+                            <div class="accordion-body">
+                                <div class="form">
+                                    <fieldset>
+                                    <h4>Service Manager Comments</h4>
+                                    <textarea></textarea>
+                                    <div>
+                                        <button class="btn btn-default more-opt">MORE OPTIONS</button>
+                                        <button class="btn btn-red">APPROVE</button>
+                                        <button class="btn btn-green">CANCEL</button>
+                                    </div>
+                                    </fieldset>
+                                    <fieldset>
+                                    <b class="gold">Admin</b>
+                                    <hr>
+                                    <h4>Vehicle Source</h4>
+                                    <div class="row">
+                                        <div class="radio radio-inline">
+                                            <div class="col-md-6">
+                                            <input name="Vehicle Source" id="Vehicle Source-1" value="MCKD Fleet" type="radio">
+                                            <label for="Vehicle Source-1" style="width:200px;"> MCKD Fleet</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                            <input name="Vehicle Source" id="Vehicle Source-2" value="Rent" type="radio">
+                                            <label for="Vehicle Source-2">  Rent</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </fieldset>
+                                </div>
+                        		<div class="showpanel-opt">
+                                    <h3>Vehicle Pool</h3>
+                                    <form class="task-history-form">
+                                    <div class="container-fluid task-sort">
+                                        <div class="row">
+                                            <div class="col-xs-3 col-sm-2 gold">SORT BY</div>
+                                            <div class="col-xs-6 col-sm-7">
+                                                <div class="row gutter-small">
+                                                    <div class="col-xs-4 col-sm-4 text-right"><label>Center </label></div>
+                                                    <div class="col-xs-8 col-sm-8">
+                                                    <select name="Status" class="form-control btn-default btn-select-light">
+                                                        <option value="All">All</option>
+                                                        <option value="Ministry of Culture Abu Dhabi" selected>Ministry of Culture Abu Dhabi</option>
+                                                    </select>
+                                                    </div>
+                                                    <!--PANEL TO SHOW/HIDE START-->
+                                                    <div class="showpanel-1 gutter-small">
+                                                        <div class="col-xs-4 col-sm-4 text-right"><label>Vehicle Type </label></div>
+                                                        <div class="col-xs-8 col-sm-8">
+                                                        <select name="Created" class="form-control btn-default btn-select-light">
+                                                            <option value="All">All</option>
+                                                            <option value="Sedan">Sedan</option>
+                                                            <option value="Wagon">Wagon</option>
+                                                        </select>
+                                                        </div>
+                                                        <div class="col-xs-4 col-sm-4 text-right"><label>Availability</label></div>
+                                                        <div class="col-xs-8 col-sm-8">
+                                                        <select name="Source" class="form-control btn-default btn-select-light">
+                                                            <option value="All">All</option>
+                                                            <option value="Available" selected>Available</option>
+                                                            <option value="Not Available">Not Available</option>
+                                                        </select>
+                                                        </div>
+                                                    </div>
+                                                    <!--PANEL TO SHOW/HIDE END-->
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-3 col-sm-3">
+                                                <div class="readmorebtn more-1 gold">More options <img src="../images/down-arrow-gold.png" alt="" /></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </form>
+                                    <div class="gold-line"></div>
+                                    <!--Table Start-->
+                                    <table class="table table-hover table-striped">
+                                    <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Vehicle</th>
+                                        <th>Type</th>
+                                        <th>Plate Number</th>
+                                        <th>Availability</th>
+                                        <th></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Camry</td>
+                                        <td>Sedan</td>
+                                        <td>H17568</td>
+                                        <td><a href="#" class="color-red">Not Available</a></td>
+                                        <td class="gold">Assign</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>BMW</td>
+                                        <td>Sedan</td>
+                                        <td>AU12345</td>
+                                        <td><a href="#" class="color-red">Not Available</a></td>
+                                        <td class="gold">Assign</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Camry</td>
+                                        <td>Sedan</td>
+                                        <td>H17568</td>
+                                        <td><a href="#" class="color-red">Not Available</a></td>
+                                        <td class="gold">Assign</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Hiace</td>
+                                        <td>Wagon</td>
+                                        <td>BT12345</td>
+                                        <td><a href="#" class="color-green">Available</a></td>
+                                        <td class="color-green"><b>Assigned</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Sunny</td>
+                                        <td>Sedan</td>
+                                        <td>H17568</td>
+                                        <td><a href="#" class="color-red">Not Available</a></td>
+                                        <td class="gold">Assign</td>
+                                    </tr>
+                                    </tbody>
+                                    <tfoot>
+                                    <tr>
+                                        <td></td>
+                                        <td colspan="3"><a href="#" class="gold">Load More...</a></td>
+                                        <td colspan="2" class="text-right"><a href="request-transport-service-manager-vehicle-fleet.html" class="gold">View Vehicle Sheet <img src="../images/expand-view.png" alt="" /></a></td>
+                                    </tr>
+                                    </tfoot>
+                                    </table>
+                                    <!--Table End-->
+                                    
+                                    
+                                    <h3>Driver Pool</h3>
+                                    <form class="task-history-form">
+                                    <div class="container-fluid task-sort">
+                                        <div class="row">
+                                            <div class="col-xs-3 col-sm-2 gold">SORT BY</div>
+                                            <div class="col-xs-6 col-sm-7">
+                                                <div class="row gutter-small">
+                                                    <div class="col-xs-4 col-sm-4 text-right"><label>Center </label></div>
+                                                    <div class="col-xs-8 col-sm-8">
+                                                    <select name="Status" class="form-control btn-default btn-select-light">
+                                                        <option value="All">All</option>
+                                                        <option value="Ministry of Culture Abu Dhabi" selected>Ministry of Culture Abu Dhabi</option>
+                                                    </select>
+                                                    </div>
+                                                    <!--PANEL TO SHOW/HIDE START-->
+                                                    <div class="showpanel-2 gutter-small">
+                                                        <div class="col-xs-4 col-sm-4 text-right"><label>Licence Type </label></div>
+                                                        <div class="col-xs-8 col-sm-8">
+                                                        <select name="Created" class="form-control btn-default btn-select-light">
+                                                            <option value="All">All</option>
+                                                            <option value="LTV" selected>LTV</option>
+                                                            <option value="HTV">HTV</option>
+                                                            <option value="BIKE">BIKE</option>
+                                                        </select>
+                                                        </div>
+                                                        <div class="col-xs-4 col-sm-4 text-right"><label>Availability</label></div>
+                                                        <div class="col-xs-8 col-sm-8">
+                                                        <select name="Source" class="form-control btn-default btn-select-light">
+                                                            <option value="All">All</option>
+                                                            <option value="Available" selected>Available</option>
+                                                            <option value="Not Available">Not Available</option>
+                                                        </select>
+                                                        </div>
+                                                    </div>
+                                                    <!--PANEL TO SHOW/HIDE END-->
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-3 col-sm-3">
+                                                <div class="readmorebtn more-2 gold">More options <img src="../images/down-arrow-gold.png" alt="" /></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </form>
+                                    <div class="gold-line"></div>
+                                    <!--Table Start-->
+                                    <table class="table table-hover table-striped">
+                                    <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Driver Name</th>
+                                        <th>Licence</th>
+                                        <th>Employee No.</th>
+                                        <th>Availability</th>
+                                        <th></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Abdul Bashir</td>
+                                        <td>LTV</td>
+                                        <td>H17568</td>
+                                        <td><a href="#" class="color-red">Not Available</a></td>
+                                        <td class="gold">Assign</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Noman Yunus</td>
+                                        <td>LTV</td>
+                                        <td>AU12345</td>
+                                        <td><a href="#" class="color-red">Not Available</a></td>
+                                        <td class="gold">Assign</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Akhter Mengal</td>
+                                        <td>LTV</td>
+                                        <td>H17568</td>
+                                        <td><a href="#" class="color-red">Not Available</a></td>
+                                        <td class="gold">Assign</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Tuti Frooti</td>
+                                        <td>LTV</td>
+                                        <td>BT12345</td>
+                                        <td><a href="#" class="color-green">Available</a></td>
+                                        <td class="gold">Assign</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Muhammed Yousuf Khan Dilawar</td>
+                                        <td>LTV/HTV</td>
+                                        <td>H17568</td>
+                                        <td><a href="#" class="color-red">Not Available</a></td>
+                                        <td class="gold">Assign</td>
+                                    </tr>
+                                    </tbody>
+                                    <tfoot>
+                                    <tr>
+                                        <td></td>
+                                        <td colspan="3"><a href="#" class="gold">Load More...</a></td>
+                                        <td colspan="2" class="text-right"><a href="request-transport-service-manager-drivers.html" class="gold">View Driver Sheet <img src="../images/expand-view.png" alt="" /></a></td>
+                                    </tr>
+                                    </tfoot>
+                                    </table>
+                                    <!--Table End-->
+                                </div>
+                            </div>
+                        
+                        </div>
+                        
+                    </div>
+                </div>
+                <!--Request Transport Box-->
+
+                <h4 class="title-date">02 May 2017, <span class="gray-color">Wednesday</span></h4>
+                <!--Request Transport Box-->
+                <div class="box-container box-container-box box-container-edit box-toggle">
+                	<div class="dropedit">
+                        <div class="nav dropdown visible-xs">
+                            <div class="hover-block edit"><a href="#">Edit</a></div>
+                            <div class="hover-block cancel"><a href="#">Cancel</a></div>
+                        </div>
+                        <ul class="nav dropdown hidden-xs">
+                            <li><a href="#"><img src="../images/edit-box.png"></a>
+                                <ul class="dropdown-menu sub-menu">
+                                    <li><a href="#">Edit Request</a></li>
+                                    <li><a href="#">Cancel Request</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="media top-toggle">
+                        <div class="media-left"> <a href="#"> <img class="media-object" src="../images/ico_quicklaunch_transport_normal.svg" alt=""> </a> </div>
+                        <div class="media-body">
+                            <div class="row">
+                                <div class="col-xs-8 col-sm-9">
+                                	<div class="row">
+                                        <div class="col-md-12">
+                                            <div>TR123456789</div>
+                                            <div class="date">May 03 2017 - May 07 2017 </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6"><span class="h-title">Duration</span> <b>04</b> Days <b>2</b>Hrs</div>
+                                        <div class="col-md-6"><span class="h-title">Timings</span> All day(s)</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div>For Fujairah visit</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 col-sm-3 status-denied">REQUEST DENIED</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-toggle">
+                        <div class="accordion">
+                            <div class="accordion-head">
+                                <h4>STATUS</h4><div class="a-arrow down"></div>
+                            </div>
+                            <div class="accordion-body">
+                            	<div class="form">
+                                    <fieldset>
+                                    <div class="row">
+                                        <div class="col-md-4"><b>Coordinator:</b></div>
+                                        <div class="col-md-8"><i class="color-green">Approved</i><div><i>-No Comments by coordinator</i></div></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4"><b>Admin:</b></div>
+                                        <div class="col-md-8"><i class="color-red">Rejected</i><div><i>-No vehicle available</i></div></div>
+                                    </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Request Transport Box-->
+                
+                <!--Request Transport Box-->
+                <div class="box-container box-container-box box-container-edit box-toggle">
+                	<div class="dropedit">
+                        <div class="nav dropdown visible-xs">
+                            <div class="hover-block edit"><a href="#">Edit</a></div>
+                            <div class="hover-block cancel"><a href="#">Cancel</a></div>
+                        </div>
+                        <ul class="nav dropdown hidden-xs">
+                            <li><a href="#"><img src="../images/edit-box.png"></a>
+                                <ul class="dropdown-menu sub-menu">
+                                    <li><a href="#">Edit Request</a></li>
+                                    <li><a href="#">Cancel Request</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="media top-toggle">
+                        <div class="media-left"> <a href="#"> <img class="media-object" src="../images/ico_quicklaunch_transport_normal.svg" alt=""> </a> </div>
+                        <div class="media-body">
+                            <div class="row">
+                                <div class="col-xs-8 col-sm-9">
+                                	<div class="row">
+                                        <div class="col-md-12">
+                                            <div>TR123456789</div>
+                                            <div class="date">May 03 2017 - May 07 2017 </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6"><span class="h-title">Duration</span> <b>04</b> Days <b>2</b>Hrs</div>
+                                        <div class="col-md-6"><span class="h-title">Timings</span> All day(s)</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div>For Fujairah visit</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 col-sm-3 status-denied">REQUEST DENIED</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-toggle">
+                        <div class="accordion">
+                            <div class="accordion-head">
+                                <h4>STATUS</h4><div class="a-arrow down"></div>
+                            </div>
+                            <div class="accordion-body">
+                            	<div class="form">
+                                    <fieldset>
+                                    <div class="row">
+                                        <div class="col-md-4"><b>Coordinator:</b></div>
+                                        <div class="col-md-8"><i class="color-red">Rejected</i><div><i>-Not allowed to go</i></div></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4"><b>Admin:</b></div>
+                                        <div class="col-md-8"></div>
+                                    </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Request Transport Box-->
+                
+                <h4 class="title-date">01 May 2017, <span class="gray-color">Tuesday</span></h4>
+                <!--Request Transport Box-->
+                <div class="box-container box-container-box box-container-edit box-toggle">
+                	<div class="dropedit">
+                        <div class="nav dropdown visible-xs">
+                            <div class="hover-block edit"><a href="#">Edit</a></div>
+                            <div class="hover-block cancel"><a href="#">Cancel</a></div>
+                        </div>
+                        <ul class="nav dropdown hidden-xs">
+                            <li><a href="#"><img src="../images/edit-box.png"></a>
+                                <ul class="dropdown-menu sub-menu">
+                                    <li><a href="#">Edit Request</a></li>
+                                    <li><a href="#">Cancel Request</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="media top-toggle">
+                        <div class="media-left"> <a href="#"> <img class="media-object" src="../images/ico_quicklaunch_transport_normal.svg" alt=""> </a> </div>
+                        <div class="media-body">
+                            <div class="row">
+                                <div class="col-xs-8 col-sm-9">
+                                	<div class="row">
+                                        <div class="col-md-12">
+                                            <div>TR123456789</div>
+                                            <div class="date">May 03 2017 - May 07 2017 </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6"><span class="h-title">Duration</span> <b>00</b> Days <b>2</b>Hrs</div>
+                                        <div class="col-md-6"><span class="h-title">Timings</span> 10:30 - 12:30</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div><i>-No reason Provided-</i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 col-sm-3 status-approved">REQUEST APPROVED</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-toggle">
+                        <div class="accordion">
+                            <div class="accordion-head">
+                                <h4>STATUS</h4><div class="a-arrow down"></div>
+                            </div>
+                            <div class="accordion-body">
+                            	<div class="form">
+                                    <fieldset>
+                                    <div class="row">
+                                        <div class="col-md-4"><b>Coordinator:</b></div>
+                                        <div class="col-md-8"><i class="color-green">Approved</i><div><i>-No Comments by coordinator</i></div></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4"><b>Admin:</b></div>
+                                        <div class="col-md-8"><i class="color-green">Approved</i><div><i>-Admin comments goes here</i></div></div>
+                                    </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Request Transport Box-->
+                
+                
+                <div class="text-center">No more requests</div>
+                
+                </div>
+            </div>
+            
+            <div class="col-sm-3 text-center hidden-xs">
+            <img src="../images/car.png" alt="" class="img-responsive center-block"  />
+            <button class="btn btn-theme" onclick="window.location.href='request-transport.html'">New Request</button>
+            </div>
+        </div>
+    </div>
+    <!-- LEFT CONTENT END -->
+    
+    <!-- RIGHT CONTENT START -->
+	<div class="col-xs-10 col-sm-10 col-md-4 col-lg-4 sidebar sidebar-right sidebar-animate sidebar-md-show">
+	<!--Sidebar Menu BT-->
+	<div class="hidden-md hidden-lg">
+		<h2>Sidebar Menu</h2>
+		<div class="row">
+		<div class="col-xs-6 col-sm-6">
+			<button type="button" class="hidden-md hidden-lg btn btn-default" data-toggle="sidebar" data-target=".sidebar-right">Close Side Bar</button>
+		</div>
+		<div class="col-xs-6 col-sm-6">
+			<div class="user-online dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="../images/user.png" alt="Ahmad al barqawi" /><span> </span> <b class="caret"></b></a>
+			<ul class="dropdown-menu">
+				<li><a href="#">Normal User</a></li>
+				<li><a href="#">Coordinator</a></li>
+				<li><a href="#">Service Manager</a></li>
+				<hr/>
+				<li><a href="#">Edit Profile</a></li>
+				<li><a href="#">Account Setting</a></li>
+				<li><a href="../login.html">Logout</a></li>
+			</ul>
+			Ahmad al barqawi
+			<!--<span class="user-designation">IT Manager</span>-->
+			</div>
+		</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-6 col-sm-4">
+				<div class="text-center box">
+				<a href="dashboard.html"><img src="../images/ico_menubar_home_normal.svg" alt="Home" class="svg" /></a>
+				<p>Home</p>
+				</div>
+			</div>
+			<div class="col-xs-6 col-sm-4">
+				<div class="text-center box">
+				<a href="notification.html"><img src="../images/ico_menubar_notify_normal.svg" alt="Notify" class="svg" /><sup class="alert-msg">99</sup></a>
+				<p>Notification</p>
+				</div>
+			</div>
+			<div class="col-xs-6 col-sm-4">
+				<div class="text-center box">
+				<a href="intranet-request-list.html"><img src="../images/ico_menubar_request_normal.svg" alt="Request" class="svg" /></a>
+				<p>My Requests</p>
+				</div>
+			</div>
+			<div class="col-xs-6 col-sm-4">
+				<div class="text-center box">
+				<a href="../ar/dashboard.html" class="font-1">عربي</a>
+				<p>Language</p>
+				</div>
+			</div>
+			<div class="col-xs-6 col-sm-4">
+				<div class="text-center box">
+				<a href="mytasks-list.html"><img src="../images/ico_menubar_task_normal.svg" alt="Task" class="svg" /></a>
+				<p>My Tasks</p>
+				</div>
+			</div>
+			<div class="col-xs-6 col-sm-4">
+				<div class="text-center box">
+				<div class="holdingbox holdingbox-sidepane">
+					<span class="allsmile">
+						<label><input type="radio" name="colorRadio" value="normal-smile" class="smile-mood"></label>
+						<label><input type="radio" name="colorRadio" value="sad-smile" class="smile-mood"><img src="../images/ico_menubar_smile_sad.svg" width="20" height="20" /></label>
+						<label><input type="radio" name="colorRadio" value="regular-smile" class="smile-mood"><img src="../images/ico_menubar_smile_regular.svg" width="20" height="20" /></label>
+						<label><input type="radio" name="colorRadio" value="happy-smile" class="smile-mood"><img src="../images/ico_menubar_smile_happy.svg" width="20" height="20" /></label>
+					</span>
+					<span class="activesmile">
+						<span class="normal-smile smile-box" style="display:inline-block;"></span>
+						<span class="sad-smile smile-box"></span>
+						<span class="regular-smile smile-box"></span>
+						<span class="happy-smile smile-box"></span>
+					</span>
+				</div>
+				<p>My Mood</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--Sidebar Menu BT-->
+	
+	<h2>Quick Launch</h2>
+	<div class="quicklaunch">
+	<div class="row no-gutter">
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+		<a href="attendance-list.html"><div class="text-center box"><img src="../images/ico_quicklaunch_attendance_normal.svg" class="img-responsive" alt="Attendence" /> <p>Attendence</p></div></a>
+		</div>
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+		<a href="events-calendar.html"><div class="text-center box"><img src="../images/ico_quicklaunch_calendar_normal.svg" class="img-responsive" alt="Calendar" /> <p>Calendar</p></div></a>
+		</div>
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+		<a href="#"><div class="text-center box"><img src="../images/ico_quicklaunch_directory_normal.svg" class="img-responsive" alt="Directory" /> <p>Directory</p></div></a>
+		</div>
+	
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+		<a href="#"><div class="text-center box"><img src="../images/ico_quicklaunch_meeting_normal.svg" class="img-responsive" alt="Meeting Room" /> <p>Meeting Room</p></div></a>
+		</div>
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+		<a href="#"><div class="text-center box"><img src="../images/ico_quicklaunch_itsupport_normal.svg" class="img-responsive" alt="IT Support" /> <p>IT Support</p></div></a>
+		</div>
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+		<a href="request-transport-service-manager.html"><div class="text-center box ql-box-active"><img src="../images/ico_quicklaunch_transport_normal.svg" class="img-responsive" alt="Transport" /> <p>Transport</p></div></a>
+		</div>
+	
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+		<a href="#"><div class="text-center box"><img src="../images/ico_quicklaunch_coffee_normal.svg" class="img-responsive" alt="Coffee" /> <p>Coffee</p></div></a>
+		</div>
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+		<a href="#"><div class="text-center box"><img src="../images/ico_quicklaunch_social_normal.svg" class="img-responsive" alt="Social" /> <p>Social</p></div></a>
+		</div>
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+		<a href="#"><div class="text-center box"><img src="../images/ico_quicklaunch_documents_normal.svg" class="img-responsive" alt="Documents" /> <p>Documents</p></div></a>
+		</div>
+	</div>
+	</div>
+	
+	<div class="mystatus">
+		<h2>My Status</h2>
+		<div class="box-container">
+		<h3>Tasks</h3>
+		<div class="row">
+		<div class="col-sm-6">Completed <span class="green">04</span></div>
+		<div class="col-sm-6 text-right">Pending <span class="red">08</span></div>
+		</div>
+		</div>
+	</div>
+	
+	<div class="box-container">
+	<h3>Attendence</h3>
+	<div class="text-right"><span class="sidebar-date">Today</span> Check in <span class="green">08:14</span></div>
+	<p class="sidebar-date">Yesterday</p>
+	<hr>
+	<div class="row">
+	<div class="col-sm-6">Check in <span class="red">10:29</span></div>
+	<div class="col-sm-6 text-right">Check out <span class="green">04:29</span></div>
+	</div>
+	</div>
+	
+	<h2>Employee Directory</h2>
+    <div class="box-container">
+        <div class="employee-directory">
+            <div class="q-search">
+                <h3>Quick Search Results <a href="#" class="gold pull-right"><u>Go to Directory</u></a></h3>
+                <div class="row q-search-result">
+                    <div class="col-sm-4"><a href="#" class="double-circle"><img src="../images/contact-1.png" alt="" class="img-responsive"></a></div>
+                    <div class="col-sm-8">
+                        <h1>Mohammad Saleh Habib</h1>
+                        <div class="gray-color q-designation">Manager Transport</div>
+                        <div class="gray-color q-designation">Department of Communications</div>
+                        <hr>
+                        <p><img src="../images/phone-icon.svg" alt="Extention No." /> EXT: 983</p>
+                        <p><img src="../images/email-icon.svg" alt="Email" /> <a href="mailto:msaleh@mckd.ae" class="gold">msaleh@mckd.ae</a></p>
+                        <p><img src="../images/tablet-icon.svg" alt="Tablet" /> 05225134899</p>
+                    </div>
+                    <div class="col-sm-4"><a class="btn btn-default back" role="button"><img src="../images/corner-left-round.svg" align="absmiddle" /> Back</a></div>
+                    <div class="col-sm-8"><a href="#" class="gold v-profile">view full profile</a></div>
+                </div>
+            </div>
+            <div class="e-list">
+                <h3>Employee List <a href="#" class="gold pull-right"><u>Go to Directory</u></a></h3>
+                <div id="searchable-container" class="searchable">
+                    <div class="row">
+                        <div class="col-xs-11 e-row">
+                        <div class="e-head">Ahmed Al Gous</div>
+                        <p class="gray-color">Finance Controller <span class="pull-right gray-color">EXT:6511</span></p>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-xs-11 e-row">
+                        <div class="e-head">Ahmed Ghani</div>
+                        <p class="gray-color">Sales Executive <span class="pull-right gray-color">EXT:1241</span></p>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-xs-11 e-row">
+                        <div class="e-head">Ahmed Habib ullah</div>
+                        <p class="gray-color">Designer <span class="pull-right gray-color">EXT:-</span></p>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-xs-11 e-row">
+                        <div class="e-head">Ahmed bin Hanbali</div>
+                        <p class="gray-color">.NET developer <span class="pull-right gray-color">EXT:1432</span></p>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-xs-11 e-row">
+                        <div class="e-head">Asshad Ullah</div>
+                        <p class="gray-color">Accountant <span class="pull-right gray-color">EXT:2343</span></p>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-xs-11 e-row">
+                        <div class="e-head">Banyamin</div>
+                        <p class="gray-color">Accountant <span class="pull-right gray-color">EXT:2151</span></p>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-xs-11 e-row">
+                        <div class="e-head">Mohammad Ahmed Sabaq</div>
+                        <p class="gray-color">Manger IT <span class="pull-right gray-color">EXT:7512</span></p>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-xs-11 e-row">
+                        <div class="e-head">Mohammed Abu Ghaly</div>
+                        <p class="gray-color">Manger Sales <span class="pull-right gray-color">EXT:-</span></p>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-xs-11 e-row">
+                        <div class="e-head">Mohammed Eslam Magdy</div>
+                        <p class="gray-color">Share point dev <span class="pull-right gray-color">EXT:1234</span></p>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-xs-11 e-row">
+                        <div class="e-head">Mohammed bin Khalid</div>
+                        <p class="gray-color">Finance person <span class="pull-right gray-color">EXT:2234</span></p>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-xs-11 e-row">
+                        <div class="e-head">Mohammed Eisa</div>
+                        <p class="gray-color">Front end dev <span class="pull-right gray-color">EXT:5432</span></p>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-xs-11 e-row">
+                        <div class="e-head">Mohammed Ahmed </div>
+                        <p class="gray-color">Accountant <span class="pull-right gray-color">EXT:2345</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row search-box">
+                    <div class="search-container">
+                        <input type="button" value="SEARCH" class="btn btn-theme search-btn"><input type="search" id="container-search" value="" class="form-control search-input text-search" placeholder="Search by Name, Designation, Ext No.">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	<div class="box-container">
+	<h3>Recent Activity</h3>
+	<p><b>Mohammad Ahmed</b> tagged you in a comment</p>
+	<p class="sidebar-date">Today 10:30</p>
+	<hr>
+	
+	<p><b>M Sabaq</b> assigned you a new task</p>
+	<p class="sidebar-date">Today 12:11</p>
+	<hr>
+	
+	<p><b>Jasmeen Ali </b> sent you an mail</p>
+	<p class="sidebar-date">Today 13:45</p>
+	</div>
+	</div><!--/.sidebar-offcanvas-->
+	<!-- RIGHT CONTENT END -->
+	</div><!--/row-->
+	<!--Internal E Services Starts-->
+	<div class="eServices container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12">
+			<div class="bottom-pullup">
+				<h2>Internal E Services <span class="showall pull-right"><a href="eservices.html">Show All</a></span></h2>
+				<div class="text-center"><span class="glyphicon glyphicon-chevron-up arrow" aria-hidden="true"></span></div>
+					<div class="row text-center">
+						<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/1-request-transport.png" alt="" /><p>Request Transportation</p></a></div>
+						<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/2-employee-issue-report.png" alt="" /><p>Employee Issue Report</p></a></div>
+						<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/3-leave-request.png" alt="" /><p>Leave Request</p></a></div>
+						<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/4-request-noc-letter.png" alt="" /><p>Request NOC letter</p></a></div>
+						<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/5-hotel-hall-reservation.png" alt="" /><p>Hotel / Hall reservation</p></a></div>
+						<div class="showcontent slidecontainer">
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/6-request-it-support.png" alt="" /><p>Request IT Support</p></a></div>
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/7-training-university-student.png" alt="" /><p>Training for University Students</p></a></div>
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/8-request-training.png" alt="" /><p>Request Training</p></a></div>
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/9-nursery-registration.png" alt="" /><p>Nursery Registration</p></a></div>
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/10-procurement-service.png" alt="" /><p>Procurement Services</p></a></div>
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/11-drinking-water-supply.png" alt="" /><p>Drinking Water Supply</p></a></div>
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/12-guest-booking-request.png" alt="" /><p>Guest Booking Request</p></a></div>
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/13-logistic-request.png" alt="" /><p>Logistics Request</p></a></div>
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/14-it-system-request.png" alt="" /><p>IT Systems Request</p></a></div>
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/15-employee-suggestions.png" alt="" /><p>Employee Suggestions</p></a></div>
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/16-meeting-room-booking.png" alt="" /><p>Meeting Room Booking</p></a></div>
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/17-request-for-newspaper.png" alt="" /><p>Request for Newspaper</p></a></div>
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/18-stationary-request.png" alt="" /><p>Stationary Request</p></a></div>
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/19-assets-transfer-service.png" alt="" /><p>Assets Transfer Service</p></a></div>
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/20-request-return-custody.png" alt="" /><p>Request Return Custody</p></a></div>
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/21-property-transfer.png" alt="" /><p>Property Transfer</p></a></div>
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/22-request-official-leave.png" alt="" /><p>Request Official travel leave</p></a></div>
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/23-event-media-coverage.png" alt="" /><p>Event Media Coverage Request</p></a></div>
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/24-request-social-media-content.png" alt="" /><p>Request Social Media Content</p></a></div>
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/25-sms-sending-service.png" alt="" /><p>SMS sending Service</p></a></div>
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/26-request-website-content.png" alt="" /><p>Request Website Content</p></a></div>
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/27-geophysical-design-service.png" alt="" /><p>Geophysical Design Service</p></a></div>
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/28-identity-matching-service.png" alt="" /><p>Identity Matching Service</p></a></div>
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/29-organize-ministry-international-post.png" alt="" /><p>Organize Ministry International Posts</p></a></div>
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/30-document-control-service.png" alt="" /><p>Document Control Service</p></a></div>
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/31-request-poll.png" alt="" /><p>Request Poll</p></a></div>
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/32-administrative-decision.png" alt="" /><p>Administrative Decisions</p></a></div>
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/33-service-drafting.png" alt="" /><p>Service Drafting</p></a></div>
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/34-agent-appointment.png" alt="" /><p>Agent Appointment</p></a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--Internal E Services Ends-->
+	
+</div>
+<!-- CENTER CONTENT END-->
+
+<!-- FOOTER START -->  
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-md-4 copyright">
+			<p>2017 Ministry of Culture and knowledge development</p>
+			</div>
+			<div class="col-sm-12 col-md-8">
+			<form class="navbar-form text-right" role="search">
+			<div class="input-group add-on">
+			  <input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text">
+			  <div class="input-group-btn">
+				<button class="btn btn-default btn-search" type="submit"><i class="glyphicon glyphicon-search"></i></button>		
+			  </div>
+			</div> Intranet Portal
+			</form>
+			<div class="scrolltop">
+				<div class="scroll icon"><i class="fa fa-4x fa-angle-up"></i></div>
+			</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- FOOTER END -->
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="../js/jquery-1.11.3.min.js"></script>
+<script src="../js/bootstrap.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../js/sidebar.js"></script>
+<script src="../js/searchable.js"></script>
+<script src="../js/main.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+  google.charts.load('current', {'packages':['corechart']});
+  google.charts.setOnLoadCallback(TransportRequests);
+  
+  
+  
+</script>
+</body>
+</html>

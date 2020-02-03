@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Intranet - My Tasks Create Task</title>
+
+<!-- Bootstrap -->
+<link href="../css/bootstrap.css" rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+<link href="../css/main.css" rel="stylesheet">
+</head>
+<body>
+<div class="thetop"></div>
+<!-- HEADER START -->
+<nav class="navbar">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topmenu" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse topmenu" id="topmenu">
+				<ul class="nav navbar-nav">
+					<li><a href="#ministry">Ministry<span class="sr-only">(current)</span></a></li>
+					<li class="dropdown"><a href="#departments" class="dropdown-toggle" data-toggle="dropdown">Departments <span class="caret"></span></a>
+						<ul class="dropdown-menu topmenu-dropdown">
+							<li><a href="#">Department 1</a></li>
+							<li><a href="#">Department 2</a></li>
+							<li><a href="#">Department 3</a></li>
+							<li><a href="#">Department 4</a></li>
+						</ul>
+					</li>
+					<li class="dropdown"><a href="#eservices" class="dropdown-toggle" data-toggle="dropdown">E Services <span class="caret"></span></a>
+						<ul class="dropdown-menu topmenu-dropdown">
+							<li><a href="#">Request Transportation</a></li>
+							<li><a href="#">Employee Issue Report</a></li>
+							<li><a href="#">Leave Request</a></li>
+							<li><a href="#">Request NOC Letter</a></li>
+							<li><a href="#">Hotel / Hall Reservation</a></li>
+						</ul>
+					</li>
+					<li><a href="#knowledgecenter">Knowledge Center</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- /.navbar-collapse --> 
+	</div>
+	<!-- /.container-fluid --> 
+</nav>
+<!--Page Header-->
+<div class="page-header">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-md-3 col-lg-4">
+			<button type="button" class="hidden-md hidden-lg btn btn-default sidebar-btn pull-right" data-toggle="sidebar" data-target=".sidebar-right">Side Bar</button>
+			<a href="dashboard.html"><img src="../images/logo_mckd_menubar_normal.svg" alt="United Arab Emirates Ministry of Culture & Knowledge Center" title="United Arab Emirates Ministry of Culture & Knowledge Center" class="img-responsive logo" /></a>
+			</div>
+			<div class="col-sm-12 col-md-9 col-lg-8 hidden-xs hidden-sm">
+				<div class="container-fluid">
+					<!-- Menu Bar Start-->
+					<ul class="nav navbar-nav navbar-right text-center top-right-nav" id="right-menu">
+						<li>
+						<div class="holdingbox">
+							<span class="allsmile">
+								<label><input type="radio" name="colorRadio" value="normal-smile" class="smile-mood"></label>
+								<label><input type="radio" name="colorRadio" value="sad-smile" class="smile-mood"><img src="../images/ico_menubar_smile_sad.svg" width="20" height="20" /></label>
+								<label><input type="radio" name="colorRadio" value="regular-smile" class="smile-mood"><img src="../images/ico_menubar_smile_regular.svg" width="20" height="20" /></label>
+								<label><input type="radio" name="colorRadio" value="happy-smile" class="smile-mood"><img src="../images/ico_menubar_smile_happy.svg" width="20" height="20" /></label>
+							</span>
+							<span class="activesmile">
+								<span class="normal-smile smile-box" style="display:inline-block;"></span>
+								<span class="sad-smile smile-box"></span>
+								<span class="regular-smile smile-box"></span>
+								<span class="happy-smile smile-box"></span>
+							</span>
+						</div>
+						</li>
+						<li><a href="mytasks-list.html"><img src="../images/ico_menubar_task_gold.svg" alt="Task" class="svg" /></a></li>
+						<li><a href="intranet-request-list.html"><img src="../images/ico_menubar_request_normal.svg" alt="Request" class="svg" /></a></li>
+						<li class="dropdown notification-dropdown"><a href="#notify" class="dropdown-toggle" data-toggle="dropdown"><img src="../images/ico_menubar_notify_normal.svg" alt="Notify" class="svg" /><sup class="alert-msg">99</sup></a>
+							<ul class="dropdown-menu">
+								<li>
+								<div class="bg-gold notification-top-row">
+									<div class="row">
+										<div class="col-xs-12 col-sm-6"><a href="#">Mark all as read</a></div>
+										<div class="col-xs-12 col-sm-6 text-right"><a href="notification.html"><strong>See all Notification</strong></a></div>
+									</div>
+								</div>
+								</li>
+								<li>
+								<div class="row">
+									<div class="col-xs-12 col-sm-3 text-center"> <a href="#"> <img src="../images/n-transport.png" alt=""> </a> </div>
+									<div class="col-xs-12 col-sm-9">
+										<div class="box-title">Request Transport Service</div>
+										<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed</p>
+										<div class="date gold"><strong>13:23</strong> Today</div>
+									</div>
+								</div>
+								</li>
+								<hr />
+								
+								<li>
+								<div class="row">
+									<div class="col-xs-12 col-sm-3 text-center"> <a href="#"> <img src="../images/n-news.png" alt=""> </a> </div>
+									<div class="col-xs-12 col-sm-9">
+										<div class="box-title">News</div>
+										<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed</p>
+										<div class="date gold"><strong>12:15</strong> Today</div>
+									</div>
+								</div>
+								</li>
+								<hr />
+								
+								<li>
+								<div class="row">
+									<div class="col-xs-12 col-sm-3 text-center"> <a href="#"> <img src="../images/n-itsupport.png" alt=""> </a> </div>
+									<div class="col-xs-12 col-sm-9">
+										<div class="box-title">Request IT Support</div>
+										<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed</p>
+										<div class="date gold"><strong>11:45</strong> Today</div>
+									</div>
+								</div>
+								</li>
+								<hr />
+								
+								<li>
+								<div class="row">
+									<div class="col-xs-12 col-sm-3 text-center"> <a href="#"> <img src="../images/n-itsupport.png" alt=""> </a> </div>
+									<div class="col-xs-12 col-sm-9">
+										<div class="box-title">Request IT Support</div>
+										<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed</p>
+										<div class="date gold"><strong>11:23</strong> Today</div>
+									</div>
+								</div>
+								</li>
+								<hr />
+							</ul>
+						</li>
+						<li><a href="dashboard.html"><img src="../images/ico_menubar_home_normal.svg" alt="Home" class="svg" /></a></li>
+						<li class="user-name text-right"> Ahmad al barqawi <span class="user-designation">IT Manager</span></li>
+						<li class="user-online dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="../images/user.png" alt="Ahmad al barqawi" /><span> </span> <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Normal User</a></li>
+								<li><a href="#">Coordinator</a></li>
+								<li><a href="#">Service Manager</a></li>
+								<hr/>
+								<li><a href="#">Edit Profile</a></li>
+								<li><a href="#">Account Setting</a></li>
+								<li><a href="../login.html">Logout</a></li>
+							</ul>
+						</li>
+						<li class="font-1"><a href="../ar/dashboard.html">عربي</a></li>
+					</ul>
+					<!-- Menu Bar End-->
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- HEADER END -->
+
+<!-- CENTER CONTENT START-->
+<div class="container">
+
+	<div class="row">
+	<!-- LEFT CONTENT START -->
+    <div class="col-sm-12 col-md-8 col-lg-8">
+		<!--MyTasks Start-->
+		<h2><a href="dashboard.html">Dashboard</a> \ <b><a href="mytasks-list.html">My Tasks</a></b><div class="pull-right graph-view"><img src="../images/graph-hide.png" /></div></h2>
+        <div class="graph-panel">
+        <div class="row">
+			<div class="col-xs-12 col-md-5">
+                <div class="box-container img-rounded">
+                    <h4>Task Overview</h4>
+                    <div id="TaskOverview" class="googlechart" style="height:210px; width:260px;"></div>
+                </div>
+            </div>
+            
+            <div class="col-xs-12 col-md-7">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <div class="box-container img-rounded text-center">
+                            <h4>Average Time</h4>
+                            to complete task
+                            <div id="AverageTime" class="googlechart"></div>
+                            <div class="overlay overlay-avgtime">01 <span>hr</span><br>22 <span>m</span></div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-xs-12 col-md-6">
+                        <div class="box-container img-rounded text-center">
+                            <h4>Tasks</h4>
+                            Remaining
+                            <div id="TasksRemaining" class="googlechart"></div>
+                            <div class="overlay">12</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+		<div class="row">
+			<div class="col-xs-12 col-md-12">
+            	<div class="box-container">
+				<h3>Task Summary</h3>
+                <div class="row task-summary">
+                    <div class="col-xs-6 col-sm-2">
+                        <p class="black"><b>All time</b></p>
+                        <p>Total Tasks</p>
+                        <p>Tasks Completed</p>
+                        <p>Tasks Pending</p>
+                    </div>
+                    <div class="col-xs-6 col-sm-1 gold text-right">
+	                    <p>2y 3m</p>
+                        <p>1526</p>
+                        <p>1325</p>
+                        <p>126</p>
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-7">
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-4">
+                                <p class="black"><b>Year</b></p>
+                                <p>Total Tasks</p>
+                                <p>Tasks Completed</p>
+                                <p>Tasks Pending</p>
+                            </div>
+                        
+                            <div class="col-xs-6 col-sm-2 gold text-right">
+                                <p><span class="bullet">&#9664;</span>2017<span class="bullet">&#9658;</span></p>
+                                <p>753</p>
+                                <p>632</p>
+                                <p>98</p>
+                            </div>
+                        
+                            <div class="col-xs-6 col-sm-4">
+                                <p class="black"><b>Month</b></p>
+                                <p>Total Tasks</p>
+                                <p>Tasks Completed</p>
+                                <p>Tasks Pending</p>
+                            </div>
+                        
+                            <div class="col-xs-6 col-sm-2 gold text-right">
+                                <p><span class="bullet">&#9664;</span>NOV<span class="bullet">&#9658;</span></p>
+                                <p>189</p>
+                                <p>167</p>
+                                <p>23</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-2">
+                        <p class="black text-center"><b>This Week</b></p>
+                        <div class="row">
+                            <div class="col-xs-6 small small-par">
+                                <p>S</p>
+                                <p>M</p>
+                                <p>T</p>
+                                <p>W</p>
+                                <p>T</p>
+                            </div>
+                            <div class="col-xs-6 small gold text-right small-par">
+                                <p>21/20</p>
+                                <p>17/17</p>
+                                <p>09/06</p>
+                                <p>02/02</p>
+                                <p>10/09</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+			</div>
+		</div><!--/row-->
+        </div>
+
+        
+        <div class="row">
+            <div class="col-xs-12 col-sm-9">
+                <div class="box-container">
+                <h3>Create New Task</h3>
+                <form class="form createform">
+                <fieldset>
+                <!-- Form Name -->
+                
+                <!-- Text -->
+                <div class="form-group">
+                    <h4>Task Title</h4>
+                    <div><input type="text" class="form-control" name="task-title" placeholder="Enter Task Title" /></div>
+                </div>
+                
+                <!-- Textarea -->
+                <div class="form-group">
+                    <h4>Task Description</h4>
+                    <div>                     
+                        <textarea class="form-control" id="task-description" name="task-description" placeholder="Enter Task Description"></textarea>
+                    </div>
+                </div>
+                
+                
+                <!-- Multiple Radios (inline) -->
+                <div class="form-group">
+                    <h4>Task Priority</h4>
+                    <div class="row">
+                        <div class="radio radio-inline">
+                            <div class="col-md-4">
+                            <input type="radio" name="task-priority" id="Urgent" value="Urgent">
+                            <label class="urgent" for="Urgent">Urgent</label>
+                            </div>
+                            <div class="col-md-4">
+                            <input type="radio" name="task-priority" id="High" value="High">
+                            <label class="high" for="High">High</label>
+                            </div>
+                            <div class="col-md-4">
+                            <input type="radio" name="task-priority" id="Normal" value="Normal">
+                            <label class="normal" for="Normal">Normal</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Date -->
+                <div class="form-group tenure">
+                    <h4>Task Timeline</h4>
+                    <div class="row">
+                        <div class="col-md-2"><label>StartDate</label></div>
+                        <div class="col-md-4"><input type="date" class="form-control" id="StartDate" placeholder="DD/MM/YY" /></div>
+                        <div class="col-md-2"><label>StartTime</label></div>
+                        <div class="col-md-4"><input type="time" class="form-control" placeholder="00:00" /></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2"><label>End Date</label></div>
+                        <div class="col-md-4"><input type="date" class="form-control" id="EndDate" placeholder="DD/MM/YY" /></div>
+                        <div class="col-md-2"><label>End Time</label></div>
+                        <div class="col-md-4"><input type="time" class="form-control" placeholder="00:00" /></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12"><div class="calculate"><b id="Days">00 </b> Days &nbsp;&nbsp;&nbsp;<b id=	"Hours">00</b> Hours</div></div>
+                    </div>
+                </div>
+                
+                
+                
+                
+                <!--Add Information-->
+                <div class="form-group">
+                    <h4>Checklist</h4>
+                    <div class="row no-gutter">
+                    	<div class="col-sm-2 text-center"><div class="checkbox"><label><input type="checkbox" value=""><span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span> </label></div></div>
+                        <div class="col-sm-9">Intranet Main page</div>
+                        <div class="col-sm-1 text-center"><input type="button" class="delete-icon" value="" /></div>
+
+                    	<div class="col-sm-2 text-center"><div class="checkbox"><label><input type="checkbox" value=""><span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span> </label></div></div>
+                        <div class="col-sm-9">Intranet secondary pages</div>
+                        <div class="col-sm-1 text-center"><input type="button" class="delete-icon" value="" /></div>
+
+                        <div class="col-sm-2 text-center"><div class="checkbox"><label><input type="checkbox" value=""><span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span> </label></div></div>
+                        <div class="col-sm-9"><input type="text" placeholder="Checklist item"></div>
+                        <div class="col-sm-1 text-center"><input type="button" class="add-icon" value="" /></div>
+                         	
+                        <div class="col-sm-2"></div>
+                        <div class="col-sm-10"><input type="button" class="add" value="+ Add another item" /></div>
+                    </div>
+                    
+                    <h4>Assign Users</h4>
+                    <div class="row no-gutter">
+                    	<div class="col-sm-2 text-center"><img src="../images/user-icon.png" alt="" /></div>
+                        <div class="col-sm-9">Mohammed Ahmed Sabaq</div>
+                        <div class="col-sm-1 text-center"><input type="button" class="delete-icon" value="" /></div>
+
+                    	<div class="col-sm-2 text-center"><img src="../images/user-icon.png" alt="" /></div>
+                        <div class="col-sm-9">Faisal Habib</div>
+                        <div class="col-sm-1 text-center"><input type="button" class="delete-icon" value="" /></div>
+
+                        <div class="col-sm-2 text-center"><img src="../images/user-icon.png" alt="" /></div>
+                        <div class="col-sm-9"><input type="text" placeholder="Assign Users"></div>
+                        <div class="col-sm-1 text-center"><input type="button" class="add-icon" value="" /></div>
+                         	
+                        <div class="col-sm-2"></div>
+                        <div class="col-sm-10"><input type="button" class="add" value="+ Add another User" /></div>
+                    </div>
+                    
+                    <h4>Attachments</h4>
+                    <div class="row no-gutter">
+                    	<div class="col-sm-2 text-center"><img src="../images/attachment-icon.png" alt="" /></div>
+                        <div class="col-sm-9">Module 1.ppt</div>
+                        <div class="col-sm-1 text-center"><input type="button" class="delete-icon" value="" /></div>
+
+                    	<div class="col-sm-2 text-center"><img src="../images/attachment-icon.png" alt="" /></div>
+                        <div class="col-sm-9">Project Requirements.doc</div>
+                        <div class="col-sm-1 text-center"><input type="button" class="delete-icon" value="" /></div>
+
+                        <div class="col-sm-2 text-center"><img src="../images/attachment-icon.png" alt="" /></div>
+                        <div class="col-sm-9"><input type="text" value="C:\Local\My Documents\Tiny.jpg" /></div>
+                        <div class="col-sm-1 text-center"><input type="button" class="add-icon" value="" /></div>
+                         	
+                        <div class="col-sm-2"></div>
+                        <div class="col-sm-10"><input type="button" class="add" value="+ Add another File" /></div>
+                    </div>
+                    
+                    <div class="pull-right">
+                    <button class="btn btn-default">CREATE TASK</button>
+                    <button class="btn btn-gray">CANCEL</button>
+                    </div>
+                </div>
+                
+                
+                </fieldset>
+                </form>
+                </div>
+            </div>
+            
+            <div class="col-xs-12 col-sm-3 text-center">
+            <img src="../images/task.png" class="img-responsive center-block" alt=""  />
+            <button class="btn btn-theme">Create Task</button>
+            <button class="btn btn-default" type="reset">Clear All</button>
+            <button class="btn btn-default">Cancel</button>
+            </div>
+        </div><!--/row-->
+	</div>
+	<!-- LEFT CONTENT END -->
+	
+	<!-- RIGHT CONTENT START -->
+	<div class="col-xs-10 col-sm-10 col-md-4 col-lg-4 sidebar sidebar-right sidebar-animate sidebar-md-show">
+	<!--Sidebar Menu BT-->
+	<div class="hidden-md hidden-lg">
+		<h2>Sidebar Menu</h2>
+		<div class="row">
+		<div class="col-xs-6 col-sm-6">
+			<button type="button" class="hidden-md hidden-lg btn btn-default" data-toggle="sidebar" data-target=".sidebar-right">Close Side Bar</button>
+		</div>
+		<div class="col-xs-6 col-sm-6">
+			<div class="user-online dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="../images/user.png" alt="Ahmad al barqawi" /><span> </span> <b class="caret"></b></a>
+			<ul class="dropdown-menu">
+				<li><a href="#">Normal User</a></li>
+				<li><a href="#">Coordinator</a></li>
+				<li><a href="#">Service Manager</a></li>
+				<hr/>
+				<li><a href="#">Edit Profile</a></li>
+				<li><a href="#">Account Setting</a></li>
+				<li><a href="../login.html">Logout</a></li>
+			</ul>
+			Ahmad al barqawi
+			<!--<span class="user-designation">IT Manager</span>-->
+			</div>
+		</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-6 col-sm-4">
+				<div class="text-center box">
+				<a href="dashboard.html"><img src="../images/ico_menubar_home_normal.svg" alt="Home" class="svg" /></a>
+				<p>Home</p>
+				</div>
+			</div>
+			<div class="col-xs-6 col-sm-4">
+				<div class="text-center box">
+				<a href="notification.html"><img src="../images/ico_menubar_notify_normal.svg" alt="Notify" class="svg" /><sup class="alert-msg">99</sup></a>
+				<p>Notification</p>
+				</div>
+			</div>
+			<div class="col-xs-6 col-sm-4">
+				<div class="text-center box">
+				<a href="intranet-request-list.html"><img src="../images/ico_menubar_request_normal.svg" alt="Request" class="svg" /></a>
+				<p>My Requests</p>
+				</div>
+			</div>
+			<div class="col-xs-6 col-sm-4">
+				<div class="text-center box">
+				<a href="../ar/dashboard.html" class="font-1">عربي</a>
+				<p>Language</p>
+				</div>
+			</div>
+			<div class="col-xs-6 col-sm-4">
+				<div class="text-center box">
+				<a href="mytasks-list.html"><img src="../images/ico_menubar_task_normal.svg" alt="Task" class="svg" /></a>
+				<p>My Tasks</p>
+				</div>
+			</div>
+			<div class="col-xs-6 col-sm-4">
+				<div class="text-center box">
+				<div class="holdingbox holdingbox-sidepane">
+					<span class="allsmile">
+						<label><input type="radio" name="colorRadio" value="normal-smile" class="smile-mood"></label>
+						<label><input type="radio" name="colorRadio" value="sad-smile" class="smile-mood"><img src="../images/ico_menubar_smile_sad.svg" width="20" height="20" /></label>
+						<label><input type="radio" name="colorRadio" value="regular-smile" class="smile-mood"><img src="../images/ico_menubar_smile_regular.svg" width="20" height="20" /></label>
+						<label><input type="radio" name="colorRadio" value="happy-smile" class="smile-mood"><img src="../images/ico_menubar_smile_happy.svg" width="20" height="20" /></label>
+					</span>
+					<span class="activesmile">
+						<span class="normal-smile smile-box" style="display:inline-block;"></span>
+						<span class="sad-smile smile-box"></span>
+						<span class="regular-smile smile-box"></span>
+						<span class="happy-smile smile-box"></span>
+					</span>
+				</div>
+				<p>My Mood</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--Sidebar Menu BT-->
+	
+	<h2>Quick Launch</h2>
+	<div class="quicklaunch">
+	<div class="row no-gutter">
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+		<a href="attendance-list.html"><div class="text-center box"><img src="../images/ico_quicklaunch_attendance_normal.svg" class="img-responsive" alt="Attendence" /> <p>Attendence</p></div></a>
+		</div>
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+		<a href="events-calendar.html"><div class="text-center box"><img src="../images/ico_quicklaunch_calendar_normal.svg" class="img-responsive" alt="Calendar" /> <p>Calendar</p></div></a>
+		</div>
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+		<a href="#"><div class="text-center box"><img src="../images/ico_quicklaunch_directory_normal.svg" class="img-responsive" alt="Directory" /> <p>Directory</p></div></a>
+		</div>
+	
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+		<a href="#"><div class="text-center box"><img src="../images/ico_quicklaunch_meeting_normal.svg" class="img-responsive" alt="Meeting Room" /> <p>Meeting Room</p></div></a>
+		</div>
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+		<a href="#"><div class="text-center box"><img src="../images/ico_quicklaunch_itsupport_normal.svg" class="img-responsive" alt="IT Support" /> <p>IT Support</p></div></a>
+		</div>
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+		<a href="request-transport-service-manager.html"><div class="text-center box"><img src="../images/ico_quicklaunch_transport_normal.svg" class="img-responsive" alt="Transport" /> <p>Transport</p></div></a>
+		</div>
+	
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+		<a href="#"><div class="text-center box"><img src="../images/ico_quicklaunch_coffee_normal.svg" class="img-responsive" alt="Coffee" /> <p>Coffee</p></div></a>
+		</div>
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+		<a href="#"><div class="text-center box"><img src="../images/ico_quicklaunch_social_normal.svg" class="img-responsive" alt="Social" /> <p>Social</p></div></a>
+		</div>
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+		<a href="#"><div class="text-center box"><img src="../images/ico_quicklaunch_documents_normal.svg" class="img-responsive" alt="Documents" /> <p>Documents</p></div></a>
+		</div>
+	</div>
+	</div>
+	
+	<div class="mystatus">
+		<h2>My Status</h2>
+		<div class="box-container">
+		<h3>Tasks</h3>
+		<div class="row">
+		<div class="col-sm-6">Completed <span class="green">04</span></div>
+		<div class="col-sm-6 text-right">Pending <span class="red">08</span></div>
+		</div>
+		</div>
+	</div>
+	
+	<div class="box-container">
+	<h3>Attendence</h3>
+	<div class="text-right"><span class="sidebar-date">Today</span> Check in <span class="green">08:14</span></div>
+	<p class="sidebar-date">Yesterday</p>
+	<hr>
+	<div class="row">
+	<div class="col-sm-6">Check in <span class="red">10:29</span></div>
+	<div class="col-sm-6 text-right">Check out <span class="green">04:29</span></div>
+	</div>
+	</div>
+	
+	<h2>Employee Directory</h2>
+    <div class="box-container">
+        <div class="employee-directory">
+            <div class="q-search">
+                <h3>Quick Search Results <a href="#" class="gold pull-right"><u>Go to Directory</u></a></h3>
+                <div class="row q-search-result">
+                    <div class="col-sm-4"><a href="#" class="double-circle"><img src="../images/contact-1.png" alt="" class="img-responsive"></a></div>
+                    <div class="col-sm-8">
+                        <h1>Mohammad Saleh Habib</h1>
+                        <div class="gray-color q-designation">Manager Transport</div>
+                        <div class="gray-color q-designation">Department of Communications</div>
+                        <hr>
+                        <p><img src="../images/phone-icon.svg" alt="Extention No." /> EXT: 983</p>
+                        <p><img src="../images/email-icon.svg" alt="Email" /> <a href="mailto:msaleh@mckd.ae" class="gold">msaleh@mckd.ae</a></p>
+                        <p><img src="../images/tablet-icon.svg" alt="Tablet" /> 05225134899</p>
+                    </div>
+                    <div class="col-sm-4"><a class="btn btn-default back" role="button"><img src="../images/corner-left-round.svg" align="absmiddle" /> Back</a></div>
+                    <div class="col-sm-8"><a href="#" class="gold v-profile">view full profile</a></div>
+                </div>
+            </div>
+            <div class="e-list">
+                <h3>Employee List <a href="#" class="gold pull-right"><u>Go to Directory</u></a></h3>
+                <div id="searchable-container" class="searchable">
+                    <div class="row">
+                        <div class="col-xs-11 e-row">
+                        <div class="e-head">Ahmed Al Gous</div>
+                        <p class="gray-color">Finance Controller <span class="pull-right gray-color">EXT:6511</span></p>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-xs-11 e-row">
+                        <div class="e-head">Ahmed Ghani</div>
+                        <p class="gray-color">Sales Executive <span class="pull-right gray-color">EXT:1241</span></p>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-xs-11 e-row">
+                        <div class="e-head">Ahmed Habib ullah</div>
+                        <p class="gray-color">Designer <span class="pull-right gray-color">EXT:-</span></p>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-xs-11 e-row">
+                        <div class="e-head">Ahmed bin Hanbali</div>
+                        <p class="gray-color">.NET developer <span class="pull-right gray-color">EXT:1432</span></p>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-xs-11 e-row">
+                        <div class="e-head">Asshad Ullah</div>
+                        <p class="gray-color">Accountant <span class="pull-right gray-color">EXT:2343</span></p>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-xs-11 e-row">
+                        <div class="e-head">Banyamin</div>
+                        <p class="gray-color">Accountant <span class="pull-right gray-color">EXT:2151</span></p>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-xs-11 e-row">
+                        <div class="e-head">Mohammad Ahmed Sabaq</div>
+                        <p class="gray-color">Manger IT <span class="pull-right gray-color">EXT:7512</span></p>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-xs-11 e-row">
+                        <div class="e-head">Mohammed Abu Ghaly</div>
+                        <p class="gray-color">Manger Sales <span class="pull-right gray-color">EXT:-</span></p>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-xs-11 e-row">
+                        <div class="e-head">Mohammed Eslam Magdy</div>
+                        <p class="gray-color">Share point dev <span class="pull-right gray-color">EXT:1234</span></p>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-xs-11 e-row">
+                        <div class="e-head">Mohammed bin Khalid</div>
+                        <p class="gray-color">Finance person <span class="pull-right gray-color">EXT:2234</span></p>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-xs-11 e-row">
+                        <div class="e-head">Mohammed Eisa</div>
+                        <p class="gray-color">Front end dev <span class="pull-right gray-color">EXT:5432</span></p>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-xs-11 e-row">
+                        <div class="e-head">Mohammed Ahmed </div>
+                        <p class="gray-color">Accountant <span class="pull-right gray-color">EXT:2345</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row search-box">
+                    <div class="search-container">
+                        <input type="button" value="SEARCH" class="btn btn-theme search-btn"><input type="search" id="container-search" value="" class="form-control search-input text-search" placeholder="Search by Name, Designation, Ext No.">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	<div class="box-container">
+	<h3>Recent Activity</h3>
+	<p><b>Mohammad Ahmed</b> tagged you in a comment</p>
+	<p class="sidebar-date">Today 10:30</p>
+	<hr>
+	
+	<p><b>M Sabaq</b> assigned you a new task</p>
+	<p class="sidebar-date">Today 12:11</p>
+	<hr>
+	
+	<p><b>Jasmeen Ali </b> sent you an mail</p>
+	<p class="sidebar-date">Today 13:45</p>
+	</div>
+	</div><!--/.sidebar-offcanvas-->
+	<!-- RIGHT CONTENT END -->
+	</div><!--/row-->
+	<!--Internal E Services Starts-->
+	<div class="eServices container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12">
+			<div class="bottom-pullup">
+				<h2>Internal E Services <span class="showall pull-right"><a href="eservices.html">Show All</a></span></h2>
+				<div class="text-center"><span class="glyphicon glyphicon-chevron-up arrow" aria-hidden="true"></span></div>
+					<div class="row text-center">
+						<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/1-request-transport.png" alt="" /><p>Request Transportation</p></a></div>
+						<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/2-employee-issue-report.png" alt="" /><p>Employee Issue Report</p></a></div>
+						<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/3-leave-request.png" alt="" /><p>Leave Request</p></a></div>
+						<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/4-request-noc-letter.png" alt="" /><p>Request NOC letter</p></a></div>
+						<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/5-hotel-hall-reservation.png" alt="" /><p>Hotel / Hall reservation</p></a></div>
+						<div class="showcontent slidecontainer">
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/6-request-it-support.png" alt="" /><p>Request IT Support</p></a></div>
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/7-training-university-student.png" alt="" /><p>Training for University Students</p></a></div>
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/8-request-training.png" alt="" /><p>Request Training</p></a></div>
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/9-nursery-registration.png" alt="" /><p>Nursery Registration</p></a></div>
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/10-procurement-service.png" alt="" /><p>Procurement Services</p></a></div>
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/11-drinking-water-supply.png" alt="" /><p>Drinking Water Supply</p></a></div>
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/12-guest-booking-request.png" alt="" /><p>Guest Booking Request</p></a></div>
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/13-logistic-request.png" alt="" /><p>Logistics Request</p></a></div>
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/14-it-system-request.png" alt="" /><p>IT Systems Request</p></a></div>
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/15-employee-suggestions.png" alt="" /><p>Employee Suggestions</p></a></div>
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/16-meeting-room-booking.png" alt="" /><p>Meeting Room Booking</p></a></div>
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/17-request-for-newspaper.png" alt="" /><p>Request for Newspaper</p></a></div>
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/18-stationary-request.png" alt="" /><p>Stationary Request</p></a></div>
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/19-assets-transfer-service.png" alt="" /><p>Assets Transfer Service</p></a></div>
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/20-request-return-custody.png" alt="" /><p>Request Return Custody</p></a></div>
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/21-property-transfer.png" alt="" /><p>Property Transfer</p></a></div>
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/22-request-official-leave.png" alt="" /><p>Request Official travel leave</p></a></div>
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/23-event-media-coverage.png" alt="" /><p>Event Media Coverage Request</p></a></div>
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/24-request-social-media-content.png" alt="" /><p>Request Social Media Content</p></a></div>
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/25-sms-sending-service.png" alt="" /><p>SMS sending Service</p></a></div>
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/26-request-website-content.png" alt="" /><p>Request Website Content</p></a></div>
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/27-geophysical-design-service.png" alt="" /><p>Geophysical Design Service</p></a></div>
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/28-identity-matching-service.png" alt="" /><p>Identity Matching Service</p></a></div>
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/29-organize-ministry-international-post.png" alt="" /><p>Organize Ministry International Posts</p></a></div>
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/30-document-control-service.png" alt="" /><p>Document Control Service</p></a></div>
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/31-request-poll.png" alt="" /><p>Request Poll</p></a></div>
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/32-administrative-decision.png" alt="" /><p>Administrative Decisions</p></a></div>
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/33-service-drafting.png" alt="" /><p>Service Drafting</p></a></div>
+							<div class="col-md-5ths col-sm-6 col-xs-6"><a href="#"><img src="../images/34-agent-appointment.png" alt="" /><p>Agent Appointment</p></a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--Internal E Services Ends-->
+	
+</div>
+<!-- CENTER CONTENT END-->
+
+<!-- FOOTER START -->  
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-md-4 copyright">
+			<p>2017 Ministry of Culture and knowledge development</p>
+			</div>
+			<div class="col-sm-12 col-md-8">
+			<form class="navbar-form text-right" role="search">
+			<div class="input-group add-on">
+			  <input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text">
+			  <div class="input-group-btn">
+				<button class="btn btn-default btn-search" type="submit"><i class="glyphicon glyphicon-search"></i></button>		
+			  </div>
+			</div> Intranet Portal
+			</form>
+			<div class="scrolltop">
+				<div class="scroll icon"><i class="fa fa-4x fa-angle-up"></i></div>
+			</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- FOOTER END -->
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="../js/jquery-1.11.3.min.js"></script>
+<script src="../js/bootstrap.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../js/sidebar.js"></script>
+<script src="../js/searchable.js"></script>
+<script src="../js/main.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+  google.charts.load('current', {'packages':['corechart']});
+  google.charts.setOnLoadCallback(TaskOverview);
+  google.charts.setOnLoadCallback(AverageTime);
+  google.charts.setOnLoadCallback(TasksRemaining);
+</script>
+</body>
+</html>
