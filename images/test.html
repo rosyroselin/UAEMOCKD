@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>jQuery Show Hide Elements Using Radio Buttons</title>
+<style type="text/css">
+    .smile-box{color: #fff; padding: 20px;display: none; margin-top: 20px;}
+    .sad{ background:url(ico_menubar_smile_sad.svg) no-repeat; }
+    .regular{ background:url(ico_menubar_smile_regular.svg) no-repeat; }
+    .happy{ background:url(ico_menubar_smile_happy.svg) no-repeat; }
+	input.smile-mood{display:none;}
+</style>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('.smile-mood').click(function(){
+        var inputValue = $(this).attr("value");
+        var targetBox = $("." + inputValue);
+        $(".smile-box").not(targetBox).hide();
+        $(targetBox).show();
+    });
+});
+</script>
+</head>
+<body>
+    <label><input type="radio" name="colorRadio" value="sad" class="smile-mood"><img src="ico_menubar_smile_sad.svg" width="18" height="18" /></label>
+    <label><input type="radio" name="colorRadio" value="regular" class="smile-mood regular-mood"><img src="ico_menubar_smile_regular.svg" width="18" height="18" /></label>
+    <label><input type="radio" name="colorRadio" value="happy" class="smile-mood smile-mood"><img src="ico_menubar_smile_happy.svg" width="18" height="18" /></label>
+    <span class="sad smile-box"> </span>
+    <span class="regular smile-box"> </span>
+    <span class="happy smile-box"> </span>
+</body>
+</html>                            
